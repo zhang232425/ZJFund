@@ -14,7 +14,7 @@ import ZJExtension
 import ZJBase
 import SnapKit
 
-class BaseViewController: BaseViewController {
+class BaseViewController: ZJViewController {
 
     let disposeBag = DisposeBag()
 
