@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ZJFund_Example' do
+  pod 'ZJFund', :path => '../'
+
+  target 'ZJFund_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
