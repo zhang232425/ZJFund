@@ -1,0 +1,71 @@
+{
+  "name": "ZJFund",
+  "version": "0.1.0",
+  "summary": "A short description of ZJFund.",
+  "homepage": "https://github.com/51930184@qq.com/ZJFund",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "51930184@qq.com": "yonathan@asetku.com"
+  },
+  "source": {
+    "git": "https://github.com/51930184@qq.com/ZJFund.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJFund/Classes/**/*",
+  "resource_bundles": {
+    "ZJFund": [
+      "ZJFund/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "Then": [
+
+    ],
+    "Action": [
+
+    ],
+    "RxCocoa": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "ZJRequest": [
+
+    ],
+    "ZJLocalizable": [
+
+    ],
+    "ZJRouter": [
+
+    ],
+    "ZJRoutableTargets": [
+
+    ],
+    "ZJBase": [
+
+    ],
+    "ZJExtension": [
+
+    ],
+    "ZJHUD": [
+
+    ],
+    "ZJCommonView": [
+
+    ],
+    "ZJRefresh": [
+
+    ],
+    "ZJCommonDefines": [
+
+    ]
+  }
+}

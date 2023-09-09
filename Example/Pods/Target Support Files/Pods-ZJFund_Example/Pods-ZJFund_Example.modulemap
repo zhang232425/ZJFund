@@ -1,0 +1,6 @@
+framework module Pods_ZJFund_Example {
+  umbrella header "Pods-ZJFund_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

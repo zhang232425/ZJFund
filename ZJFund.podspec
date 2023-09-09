@@ -7,36 +7,36 @@
 #
 
 Pod::Spec.new do |s|
+    
   s.name             = 'ZJFund'
   s.version          = '0.1.0'
   s.summary          = 'A short description of ZJFund.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
   s.homepage         = 'https://github.com/51930184@qq.com/ZJFund'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '51930184@qq.com' => 'yonathan@asetku.com' }
   s.source           = { :git => 'https://github.com/51930184@qq.com/ZJFund.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZJFund/Classes/**/*'
+  s.resource_bundles = {
+      'ZJFund' => ['ZJFund/Assets/**/*']
+  }
+  s.static_framework = true
   
-  # s.resource_bundles = {
-  #   'ZJFund' => ['ZJFund/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Then'
+  s.dependency 'Action'
+  s.dependency 'RxCocoa'
+  s.dependency 'RxSwift'
+  
+  s.dependency 'ZJRequest'
+  s.dependency 'ZJLocalizable'
+  s.dependency 'ZJRouter'
+  s.dependency 'ZJRoutableTargets'
+  s.dependency 'ZJBase'
+  s.dependency 'ZJExtension'
+  s.dependency 'ZJHUD'
+  s.dependency 'ZJCommonView'
+  s.dependency 'ZJRefresh'
+  s.dependency 'ZJCommonDefines'
+  
 end

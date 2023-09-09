@@ -1,0 +1,6 @@
+framework module ZJFund {
+  umbrella header "ZJFund-umbrella.h"
+
+  export *
+  module * { export * }
+}
