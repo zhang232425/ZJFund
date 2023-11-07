@@ -9,6 +9,7 @@ import Foundation
 
 public extension UIApplication {
     
+    // MARK: - Method
     func open(url: URL) {
         if UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10.0, *) {
@@ -19,11 +20,11 @@ public extension UIApplication {
         }
     }
     
-    func switchRootViewController(to viewController: UIViewController?, anmated: Bool) {
+    func switchRootViewController(to viewController: UIViewController?, animated: Bool) {
         
         guard let window = delegate?.window as? UIWindow else { return }
         
-        guard anmated else {
+        guard animated else {
             window.rootViewController = viewController
             return
         }
@@ -37,4 +38,91 @@ public extension UIApplication {
         
     }
     
+    // MARK: - Property
+    var navigationController: UINavigationController? {
+        
+        guard let rootViewController = appRootViewController else {
+            return nil
+        }
+        
+        var navigationController: UINavigationController?
+        
+        if let vc = rootViewController as? UINavigationController {
+            navigationController = vc
+        }
+        
+        if let tabBarController = rootViewController as? UITabBarController,
+            let vc = tabBarController.selectedViewController as? UINavigationController {
+            navigationController = vc
+        }
+        
+        guard var topViewController: UIViewController = navigationController else {
+            return nil
+        }
+        
+        while topViewController.presentedViewController != nil {
+            topViewController = topViewController.presentedViewController!
+        }
+        
+        return topViewController as? UINavigationController
+        
+    }
+    
+    var topViewController: UIViewController? {
+        
+        if let rootViewController = appRootViewController {
+            return topController(of: rootViewController)
+        }
+        
+        return nil
+        
+    }
+    
 }
+
+private extension UIApplication {
+    
+    var appRootViewController: UIViewController? {
+        return (UIApplication.shared.delegate?.window as? UIWindow)?.rootViewController
+    }
+    
+    func topController(of viewController: UIViewController) -> UIViewController? {
+        
+        if let presentedViewController = viewController.presentedViewController {
+            return topController(of: presentedViewController)
+        }
+        
+        if let tabBarController = viewController as? UITabBarController,
+            let selectedViewController = tabBarController.selectedViewController {
+            return topController(of: selectedViewController)
+        }
+        
+        if let navigationController = viewController as? UINavigationController,
+            let visibleViewController = navigationController.visibleViewController {
+            return topController(of: visibleViewController)
+        }
+        
+        if let pageViewController = viewController as? UIPageViewController,
+            pageViewController.viewControllers?.count == 1,
+            let vc = pageViewController.viewControllers?.first {
+            return topController(of: vc)
+        }
+        
+        if let subviews = viewController.view?.subviews {
+            
+            for subview in subviews {
+                if let childViewController = subview.next as? UIViewController {
+                    return topController(of: childViewController)
+                }
+            }
+            
+        }
+        
+        return viewController
+        
+    }
+    
+}
+
+
+

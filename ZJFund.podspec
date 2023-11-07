@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
   s.name             = 'ZJFund'
   s.version          = '0.1.0'
   s.summary          = 'A short description of ZJFund.'
-  s.homepage         = 'https://github.com/51930184@qq.com/ZJFund'
+  s.homepage         = 'https://github.com/zhang232425/ZJFund.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '51930184@qq.com' => 'yonathan@asetku.com' }
-  s.source           = { :git => 'https://github.com/51930184@qq.com/ZJFund.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhang232425/ZJFund.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZJFund/Classes/**/*'
@@ -24,9 +24,12 @@ Pod::Spec.new do |s|
   s.static_framework = true
   
   s.dependency 'Then'
+  s.dependency 'SnapKit'
   s.dependency 'Action'
   s.dependency 'RxCocoa'
   s.dependency 'RxSwift'
+  s.dependency 'RxDataSources'
+  s.dependency 'RxSwiftExt'
   
   s.dependency 'ZJRequest'
   s.dependency 'ZJLocalizable'

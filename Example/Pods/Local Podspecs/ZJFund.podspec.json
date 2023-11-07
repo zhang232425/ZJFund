@@ -2,7 +2,7 @@
   "name": "ZJFund",
   "version": "0.1.0",
   "summary": "A short description of ZJFund.",
-  "homepage": "https://github.com/51930184@qq.com/ZJFund",
+  "homepage": "https://github.com/zhang232425/ZJFund.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -11,7 +11,7 @@
     "51930184@qq.com": "yonathan@asetku.com"
   },
   "source": {
-    "git": "https://github.com/51930184@qq.com/ZJFund.git",
+    "git": "https://github.com/zhang232425/ZJFund.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -28,6 +28,9 @@
     "Then": [
 
     ],
+    "SnapKit": [
+
+    ],
     "Action": [
 
     ],
@@ -35,6 +38,12 @@
 
     ],
     "RxSwift": [
+
+    ],
+    "RxDataSources": [
+
+    ],
+    "RxSwiftExt": [
 
     ],
     "ZJRequest": [

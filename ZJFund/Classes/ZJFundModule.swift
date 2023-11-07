@@ -7,6 +7,7 @@
 
 import ZJRouter
 import ZJRoutableTargets
+import ZJBase
 
 public struct ZJFundModule: ZJModule {
     
@@ -15,7 +16,7 @@ public struct ZJFundModule: ZJModule {
     public func initialize() {
         
         ZJFundRoutableTarget.register(path: ZJFundRoutePath.fund) { _ in
-            return ZJFundViewController()
+            return ZJNavigationController(rootViewController: ZJFundViewController())
         }
         
     }

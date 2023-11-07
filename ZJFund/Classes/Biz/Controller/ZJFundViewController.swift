@@ -6,12 +6,101 @@
 //
 
 import UIKit
+import RxDataSources
+import RxSwift
+import RxCocoa
+import RxSwiftExt
 
 class ZJFundViewController: BaseViewController {
     
+    enum Row {
+        
+        case swift
+        case rxSwift
+        case hangge
+        case algorithm
+        
+        var title: String {
+            switch self {
+            case .swift:
+                return "Swift"
+            case .rxSwift:
+                return "RxSwift"
+            case .hangge:
+                return "Hangge"
+            case .algorithm:
+                return "Algorithm"
+            }
+        }
+        
+        var vc: UIViewController {
+            switch self {
+            case .swift:
+                return SwiftViewController()
+            case .rxSwift:
+                return RxSwiftViewController()
+            default:
+                return UIViewController()
+            }
+        }
+        
+    }
+
+    private let items = BehaviorRelay<[SectionModel<Void, Row>]>(value: .init())
+    
+    private lazy var tableView = UITableView(frame: .zero, style: .plain).then {
+        $0.registerCell(ZJFundCell.self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        config()
+        setupViews()
+        bindData()
     }
 
 }
+
+private extension ZJFundViewController {
+    
+    func config() {
+        
+        self.navigationItem.title = "Fund"
+        
+    }
+    
+    func setupViews() {
+        
+        tableView.add(to: view).snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+    }
+    
+    func bindData() {
+        
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<Void, Row>>(configureCell: { (_, tableView, index, row) in
+            let cell: ZJFundCell = tableView.dequeueReuseableCell(forIndexPath: index)
+            cell.setRow(row)
+            return cell
+        })
+        
+        items.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(Row.self)
+            .subscribe(weak: self, onNext: ZJFundViewController.rowClick)
+            .disposed(by: disposeBag)
+        
+        items.accept([.init(model: (), items: [.swift, .rxSwift, .hangge, .algorithm])])
+        
+    }
+    
+    func rowClick(_ row: Row) {
+        
+        self.navigationController?.pushViewController(row.vc, animated: true)
+        
+    }
+    
+    
+}
+

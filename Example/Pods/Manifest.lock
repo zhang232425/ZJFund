@@ -2,9 +2,10 @@ PODS:
   - Action (5.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
-  - Alamofire (5.8.0)
+  - Alamofire (5.8.1)
   - CryptoSwift (1.5.1)
   - DeviceKit (4.9.0)
+  - Differentiator (5.0.0)
   - ESPullToRefresh (2.9.3)
   - HandyJSON (5.0.2)
   - KeychainSwift (20.0.0)
@@ -21,21 +22,40 @@ PODS:
   - RTRootNavigationController (0.8.0):
     - RTRootNavigationController/Core (= 0.8.0)
   - RTRootNavigationController/Core (0.8.0)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxSwift (6.5.0)
-  - SDWebImage (5.18.0):
-    - SDWebImage/Core (= 5.18.0)
-  - SDWebImage/Core (5.18.0)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - RxSwiftExt (6.0.1):
+    - RxSwiftExt/Core (= 6.0.1)
+    - RxSwiftExt/RxCocoa (= 6.0.1)
+  - RxSwiftExt/Core (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.0.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
   - SnapKit (5.6.0)
   - SwiftyJSON (5.0.1)
   - Then (3.0.0)
   - ZJBase (0.1.0):
     - RTRootNavigationController
+    - SnapKit
+    - ZJDevice
     - ZJExtension
+    - ZJHUD
+    - ZJLocalizable
+    - ZJLoginManager
+    - ZJRoutableTargets
+    - ZJRouter
   - ZJCommonDefines (0.1.0)
   - ZJCommonView (0.1.0)
   - ZJDevice (0.1.0):
@@ -47,7 +67,10 @@ PODS:
   - ZJFund (0.1.0):
     - Action
     - RxCocoa
+    - RxDataSources
     - RxSwift
+    - RxSwiftExt
+    - SnapKit
     - Then
     - ZJBase
     - ZJCommonDefines
@@ -66,6 +89,10 @@ PODS:
   - ZJKeychain (0.1.0):
     - KeychainSwift
   - ZJLocalizable (0.1.0)
+  - ZJLoginManager (0.1.0):
+    - ZJCommonDefines
+    - ZJKeychain
+    - ZJRequest
   - ZJRefresh (0.1.0):
     - ESPullToRefresh
   - ZJRegion (0.1.0)
@@ -101,6 +128,7 @@ SPEC REPOS:
     - ZJHUD
     - ZJKeychain
     - ZJLocalizable
+    - ZJLoginManager
     - ZJRegion
     - ZJRequest
     - ZJRouter
@@ -109,6 +137,7 @@ SPEC REPOS:
     - Alamofire
     - CryptoSwift
     - DeviceKit
+    - Differentiator
     - ESPullToRefresh
     - HandyJSON
     - KeychainSwift
@@ -116,8 +145,10 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - RTRootNavigationController
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
+    - RxSwiftExt
     - SDWebImage
     - SnapKit
     - SwiftyJSON
@@ -147,16 +178,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZJBase:
-    :commit: 329656def2f609e6e892bf00919f196ec062ad1f
+    :commit: 88d9cec27b7285c5ca636b004eb41f5e28b592e7
     :git: "git@github.com:zhang232425/ZJBase.git"
   ZJCommonDefines:
     :commit: 4d9ba68728ed9fb171e7e72825ad8a67d12b34c4
     :git: "git@github.com:zhang232425/ZJCommonDefines.git"
   ZJCommonView:
-    :commit: 5006c5b7307f8f853a7b978061705c56267b3006
+    :commit: 0b20bf4f5ebd405ef886b5b4e9356be478a1cd8f
     :git: "git@github.com:zhang232425/ZJCommonView.git"
   ZJExtension:
-    :commit: 9451149190f63f75a12c0b2404a27cc482b26a36
+    :commit: 6d20ce67b858442ec5cbf537fc6e403b657bd052
     :git: "git@github.com:zhang232425/ZJExtension.git"
   ZJRefresh:
     :commit: d2855ff0b65e3142eb90a561827b7dd07fec044d
@@ -167,31 +198,35 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
-  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
   DeviceKit: 847709bf70b78fd9ab765bd571fb9f5f815c3fc1
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  SDWebImage: 182830bcddc30cde95fbc60dfe4badc3553d94ba
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
-  ZJBase: a38dc134dca5ad2c40768bd37300e971c35f6214
+  ZJBase: 62bf80917d478c985f8ef76e2b25558820ea522b
   ZJCommonDefines: 9fd1e19aafb99bc9014e54e665520bb95aa5a22c
   ZJCommonView: e62b96fa97474a99971531e70e5e90c749d90629
   ZJDevice: bfc36b209a264aa5b877a733c6a7cffa856038db
   ZJExtension: 696a53ccf69ba7171693e4c370d2672a62a4dfd9
-  ZJFund: ac20e2f81e24ae10617f451eb7e25ce36e3cd852
+  ZJFund: bd5ed6b0b22847cbc15b7d3e4a50dd3ebee4877b
   ZJHUD: d5ca2144a62af4331f7f58386f5e4fbc5f5b2d01
   ZJKeychain: 056dd2cf24a6d44cb41677290742fe46cac94d39
   ZJLocalizable: 3c925ba648064d1da4ddc70c29335d4029fc0445
+  ZJLoginManager: 697de4822a7ff38cf60592faece276d427de9ed7
   ZJRefresh: 2ab367241aea892e43afa57498d07c47f4c38897
   ZJRegion: e077f30a1ebf32398f2e9af9380a7fe1ab4ffc61
   ZJRequest: cbca3f9b01504851babe3d409121abe1e9560f1b
