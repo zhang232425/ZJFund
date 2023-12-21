@@ -47,7 +47,7 @@ private extension ZJFundCell {
 
 extension ZJFundCell {
     
-    func setRow(_ row: ZJFundViewController.Row) {
+    func setRow(_ row: ZJFundVC.Row) {
         
         titleLabel.text = row.title
         

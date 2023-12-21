@@ -14,20 +14,20 @@ import ZJExtension
 import ZJBase
 import SnapKit
 
-class BaseViewController: ZJViewController {
+class BaseVC: ZJViewController {
 
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        config()
+        initialize()
     }
 
 }
 
-private extension BaseViewController {
+private extension BaseVC {
     
-    func config() {
+    func initialize() {
         view.backgroundColor = .white
     }
     

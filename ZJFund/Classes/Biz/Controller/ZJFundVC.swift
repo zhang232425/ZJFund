@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxSwiftExt
 
-class ZJFundViewController: BaseViewController {
+class ZJFundVC: BaseVC {
     
     enum Row {
         
@@ -36,9 +36,9 @@ class ZJFundViewController: BaseViewController {
         var vc: UIViewController {
             switch self {
             case .swift:
-                return SwiftViewController()
+                return SwiftVC()
             case .rxSwift:
-                return RxSwiftViewController()
+                return RxSwiftVC()
             default:
                 return UIViewController()
             }
@@ -61,7 +61,7 @@ class ZJFundViewController: BaseViewController {
 
 }
 
-private extension ZJFundViewController {
+private extension ZJFundVC {
     
     func config() {
         
@@ -88,7 +88,7 @@ private extension ZJFundViewController {
         items.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
         
         tableView.rx.modelSelected(Row.self)
-            .subscribe(weak: self, onNext: ZJFundViewController.rowClick)
+            .subscribe(weak: self, onNext: ZJFundVC.rowClick)
             .disposed(by: disposeBag)
         
         items.accept([.init(model: (), items: [.swift, .rxSwift, .hangge, .algorithm])])

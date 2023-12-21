@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RxSwiftViewController: BaseViewController {
+class RxSwiftVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

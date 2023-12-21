@@ -908,11 +908,11 @@
 		46EB2E00009060 /* ZJExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00009050 /* ZJExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46EB2E000090A0 /* ZJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00009090 /* ZJExtension-dummy.m */; };
 		46EB2E00009140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00003B90 /* Foundation.framework */; };
-		46EB2E000091F0 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000036F0 /* RxSwiftViewController.swift */; };
-		46EB2E00009200 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003710 /* SwiftViewController.swift */; };
+		46EB2E000091F0 /* RxSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000036F0 /* RxSwiftVC.swift */; };
+		46EB2E00009200 /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003710 /* SwiftVC.swift */; };
 		46EB2E00009210 /* ZJFundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003720 /* ZJFundCell.swift */; };
-		46EB2E00009220 /* ZJFundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003730 /* ZJFundViewController.swift */; };
-		46EB2E00009230 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003770 /* BaseViewController.swift */; };
+		46EB2E00009220 /* ZJFundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003730 /* ZJFundVC.swift */; };
+		46EB2E00009230 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003770 /* BaseVC.swift */; };
 		46EB2E00009240 /* ZJFundModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00003780 /* ZJFundModule.swift */; };
 		46EB2E00009290 /* ZJFund-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00009280 /* ZJFund-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46EB2E000092D0 /* ZJFund-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000092C0 /* ZJFund-dummy.m */; };
@@ -995,6 +995,10 @@
 		46EB2E0000AFA0 /* ZJExtension-ZJExtension in Resources */ = {isa = PBXBuildFile; fileRef = 50BE319FD3D9034322E01224F31E651F /* ZJExtension-ZJExtension */; };
 		46EB2E0000B2F0 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000B3E0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
+		D65090132B34299C00951E79 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65090122B34299C00951E79 /* BaseView.swift */; };
+		D65090152B3429B500951E79 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65090142B3429B500951E79 /* BaseCell.swift */; };
+		D65090172B342C6800951E79 /* BaseListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65090162B342C6800951E79 /* BaseListVC.swift */; };
+		D65090192B34333D00951E79 /* GenericsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65090182B34333D00951E79 /* GenericsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1761,7 +1765,7 @@
 		3654624AE312726F48C234464D70D427 /* ZJRoutableTargets-ZJRoutableTargets */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRoutableTargets-ZJRoutableTargets"; path = ZJRoutableTargets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Moya; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D161F890E501321FECB2309ED30E77 /* ZJRouter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRouter; path = ZJRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EB2E000002E0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000002E0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E000002F0 /* Action+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Action+Extensions.swift"; path = "Sources/Action/Action+Extensions.swift"; sourceTree = "<group>"; };
 		46EB2E00000300 /* Action+Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Action+Internal.swift"; path = "Sources/Action/Action+Internal.swift"; sourceTree = "<group>"; };
 		46EB2E00000310 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = Sources/Action/Action.swift; sourceTree = "<group>"; };
@@ -2584,11 +2588,11 @@
 		46EB2E00003690 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Extension.swift"; path = "ZJExtension/Classes/UIKit/UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		46EB2E000036A0 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extension.swift"; path = "ZJExtension/Classes/UIKit/UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		46EB2E000036B0 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "ZJExtension/Classes/UIKit/UIView+Extension.swift"; sourceTree = "<group>"; };
-		46EB2E000036F0 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
-		46EB2E00003710 /* SwiftViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		46EB2E000036F0 /* RxSwiftVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RxSwiftVC.swift; sourceTree = "<group>"; };
+		46EB2E00003710 /* SwiftVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 		46EB2E00003720 /* ZJFundCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZJFundCell.swift; sourceTree = "<group>"; };
-		46EB2E00003730 /* ZJFundViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZJFundViewController.swift; sourceTree = "<group>"; };
-		46EB2E00003770 /* BaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		46EB2E00003730 /* ZJFundVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZJFundVC.swift; sourceTree = "<group>"; };
+		46EB2E00003770 /* BaseVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		46EB2E00003780 /* ZJFundModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZJFundModule.swift; path = ZJFund/Classes/ZJFundModule.swift; sourceTree = "<group>"; };
 		46EB2E00003790 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "ZJHUD/Classes/Bundle+Extension.swift"; sourceTree = "<group>"; };
 		46EB2E000037A0 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "ZJHUD/Classes/UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -2633,9 +2637,9 @@
 		46EB2E00003A60 /* ZJBase.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ZJBase.xcassets; path = ZJBase/Assets/ZJBase.xcassets; sourceTree = "<group>"; };
 		46EB2E00003A80 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ZJHUD/Assets/Images.xcassets; sourceTree = "<group>"; };
 		46EB2E00003AA0 /* ASRefresh.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ASRefresh.xcassets; path = ZJRefresh/Assets/ASRefresh.xcassets; sourceTree = "<group>"; };
-		46EB2E00003AC0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00003AD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00003AE0 /* ZJFund.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZJFund.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00003AC0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00003AD0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00003AE0 /* ZJFund.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZJFund.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00003B90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46EB2E00003C40 /* Action.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Action.debug.xcconfig; sourceTree = "<group>"; };
 		46EB2E00003C50 /* Action.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Action.release.xcconfig; sourceTree = "<group>"; };
@@ -2943,6 +2947,10 @@
 		CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRequest-ZJRequest"; path = ZJRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65090122B34299C00951E79 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D65090142B3429B500951E79 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		D65090162B342C6800951E79 /* BaseListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListVC.swift; sourceTree = "<group>"; };
+		D65090182B34333D00951E79 /* GenericsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsVC.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930AB7584A69BE7DA9C0E05191A0E53 /* ZJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRefresh; path = ZJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3299,13 +3307,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00009F40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		46EB2E00009FE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -3415,7 +3416,6 @@
 				61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */,
 				E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */,
 				CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */,
-				CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */,
 				83D3933541495BB76E2608616BBC4654 /* ZJRoutableTargets */,
 				3654624AE312726F48C234464D70D427 /* ZJRoutableTargets-ZJRoutableTargets */,
 				38D161F890E501321FECB2309ED30E77 /* ZJRouter */,
@@ -3502,7 +3502,6 @@
 				46EB2E00000360 /* UIRefreshControl+Action.swift */,
 				46EB2E00003C30 /* Support Files */,
 			);
-			name = Action;
 			path = Action;
 			sourceTree = "<group>";
 		};
@@ -3548,7 +3547,6 @@
 				46EB2E000005B0 /* Validation.swift */,
 				46EB2E00003FC0 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3658,7 +3656,6 @@
 				46EB2E00000C00 /* ZeroPadding.swift */,
 				46EB2E00004750 /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -3668,7 +3665,6 @@
 				46EB2E00000C10 /* Device.generated.swift */,
 				46EB2E000048A0 /* Support Files */,
 			);
-			name = DeviceKit;
 			path = DeviceKit;
 			sourceTree = "<group>";
 		};
@@ -3689,7 +3685,6 @@
 				46EB2E00000CD0 /* Utilities.swift */,
 				46EB2E00004AA0 /* Support Files */,
 			);
-			name = Differentiator;
 			path = Differentiator;
 			sourceTree = "<group>";
 		};
@@ -3707,7 +3702,6 @@
 				46EB2E00003A00 /* Resources */,
 				46EB2E00004C70 /* Support Files */,
 			);
-			name = ESPullToRefresh;
 			path = ESPullToRefresh;
 			sourceTree = "<group>";
 		};
@@ -3752,7 +3746,6 @@
 				46EB2E00000F90 /* URLTransform.swift */,
 				46EB2E00005080 /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -3764,7 +3757,6 @@
 				46EB2E00000FC0 /* TegKeychainConstants.swift */,
 				46EB2E000051F0 /* Support Files */,
 			);
-			name = KeychainSwift;
 			path = KeychainSwift;
 			sourceTree = "<group>";
 		};
@@ -3775,7 +3767,6 @@
 				46EB2E00001160 /* RxSwift */,
 				46EB2E000054E0 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -3785,7 +3776,6 @@
 				46EB2E000011A0 /* Base */,
 				46EB2E00005870 /* Support Files */,
 			);
-			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
@@ -3795,7 +3785,6 @@
 				46EB2E00001400 /* Core */,
 				46EB2E00005A00 /* Support Files */,
 			);
-			name = RTRootNavigationController;
 			path = RTRootNavigationController;
 			sourceTree = "<group>";
 		};
@@ -3916,7 +3905,6 @@
 				46EB2E00001880 /* WKWebView+Rx.swift */,
 				46EB2E00006240 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -3941,7 +3929,6 @@
 				46EB2E00001C50 /* ViewTransition.swift */,
 				46EB2E00006480 /* Support Files */,
 			);
-			name = RxDataSources;
 			path = RxDataSources;
 			sourceTree = "<group>";
 		};
@@ -3955,7 +3942,6 @@
 				46EB2E00001CA0 /* Utils.swift */,
 				46EB2E00006610 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -4126,7 +4112,6 @@
 				46EB2E00002300 /* Zip+Collection.swift */,
 				46EB2E00007170 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -4137,7 +4122,6 @@
 				46EB2E000028D0 /* RxCocoa */,
 				46EB2E00007510 /* Support Files */,
 			);
-			name = RxSwiftExt;
 			path = RxSwiftExt;
 			sourceTree = "<group>";
 		};
@@ -4147,7 +4131,6 @@
 				46EB2E00002950 /* Core */,
 				46EB2E00007F90 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -4193,7 +4176,6 @@
 				46EB2E000034E0 /* UILayoutSupport+Extensions.swift */,
 				46EB2E00008320 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -4203,7 +4185,6 @@
 				46EB2E000034F0 /* SwiftyJSON.swift */,
 				46EB2E00008470 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -4213,7 +4194,6 @@
 				46EB2E00003500 /* Then.swift */,
 				46EB2E000085C0 /* Support Files */,
 			);
-			name = Then;
 			path = Then;
 			sourceTree = "<group>";
 		};
@@ -4232,7 +4212,6 @@
 				46EB2E00003A20 /* Resources */,
 				46EB2E000087A0 /* Support Files */,
 			);
-			name = ZJBase;
 			path = ZJBase;
 			sourceTree = "<group>";
 		};
@@ -4245,7 +4224,6 @@
 				46EB2E000035C0 /* ZJUrl+Debug.swift */,
 				46EB2E000089C0 /* Support Files */,
 			);
-			name = ZJCommonDefines;
 			path = ZJCommonDefines;
 			sourceTree = "<group>";
 		};
@@ -4256,7 +4234,6 @@
 				46EB2E000035F0 /* RoundCornerView.swift */,
 				46EB2E00008B80 /* Support Files */,
 			);
-			name = ZJCommonView;
 			path = ZJCommonView;
 			sourceTree = "<group>";
 		};
@@ -4266,7 +4243,6 @@
 				46EB2E00003600 /* ZJDevice.swift */,
 				46EB2E00008D70 /* Support Files */,
 			);
-			name = ZJDevice;
 			path = ZJDevice;
 			sourceTree = "<group>";
 		};
@@ -4286,7 +4262,6 @@
 				46EB2E000036B0 /* UIView+Extension.swift */,
 				46EB2E00008F50 /* Support Files */,
 			);
-			name = ZJExtension;
 			path = ZJExtension;
 			sourceTree = "<group>";
 		};
@@ -4312,7 +4287,6 @@
 				46EB2E00003A70 /* Resources */,
 				46EB2E00009410 /* Support Files */,
 			);
-			name = ZJHUD;
 			path = ZJHUD;
 			sourceTree = "<group>";
 		};
@@ -4322,7 +4296,6 @@
 				46EB2E000037C0 /* ZJKeychain.swift */,
 				46EB2E000095A0 /* Support Files */,
 			);
-			name = ZJKeychain;
 			path = ZJKeychain;
 			sourceTree = "<group>";
 		};
@@ -4333,7 +4306,6 @@
 				46EB2E000037E0 /* ZJLocalizer.swift */,
 				46EB2E00009760 /* Support Files */,
 			);
-			name = ZJLocalizable;
 			path = ZJLocalizable;
 			sourceTree = "<group>";
 		};
@@ -4345,7 +4317,6 @@
 				46EB2E00003810 /* ZJUserProfileAPI.swift */,
 				46EB2E00009950 /* Support Files */,
 			);
-			name = ZJLoginManager;
 			path = ZJLoginManager;
 			sourceTree = "<group>";
 		};
@@ -4360,7 +4331,6 @@
 				46EB2E00003A90 /* Resources */,
 				46EB2E00009B60 /* Support Files */,
 			);
-			name = ZJRefresh;
 			path = ZJRefresh;
 			sourceTree = "<group>";
 		};
@@ -4370,7 +4340,6 @@
 				46EB2E00003870 /* ZJRegion.swift */,
 				46EB2E00009D80 /* Support Files */,
 			);
-			name = ZJRegion;
 			path = ZJRegion;
 			sourceTree = "<group>";
 		};
@@ -4390,7 +4359,6 @@
 				46EB2E00003940 /* Core */,
 				46EB2E00009F60 /* Support Files */,
 			);
-			name = ZJRequest;
 			path = ZJRequest;
 			sourceTree = "<group>";
 		};
@@ -4405,7 +4373,6 @@
 				46EB2E000039A0 /* ZJPersonalRoutableTarget.swift */,
 				46EB2E0000A270 /* Support Files */,
 			);
-			name = ZJRoutableTargets;
 			path = ZJRoutableTargets;
 			sourceTree = "<group>";
 		};
@@ -4419,7 +4386,6 @@
 				46EB2E000039F0 /* ZJRouter.swift */,
 				46EB2E0000A4A0 /* Support Files */,
 			);
-			name = ZJRouter;
 			path = ZJRouter;
 			sourceTree = "<group>";
 		};
@@ -4740,29 +4706,27 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E00003720 /* ZJFundCell.swift */,
-				46EB2E00003730 /* ZJFundViewController.swift */,
+				46EB2E00003730 /* ZJFundVC.swift */,
 				46EB2E000036E0 /* RxSwift */,
 				46EB2E00003700 /* Swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
 		46EB2E000036E0 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000036F0 /* RxSwiftViewController.swift */,
+				46EB2E000036F0 /* RxSwiftVC.swift */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		46EB2E00003700 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00003710 /* SwiftViewController.swift */,
+				46EB2E00003710 /* SwiftVC.swift */,
+				D65090182B34333D00951E79 /* GenericsVC.swift */,
 			);
-			name = Swift;
 			path = Swift;
 			sourceTree = "<group>";
 		};
@@ -4778,18 +4742,18 @@
 		46EB2E00003750 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D65090112B34298200951E79 /* View */,
 				46EB2E00003760 /* Base */,
 			);
-			name = Components;
 			path = Components;
 			sourceTree = "<group>";
 		};
 		46EB2E00003760 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00003770 /* BaseViewController.swift */,
+				46EB2E00003770 /* BaseVC.swift */,
+				D65090162B342C6800951E79 /* BaseListVC.swift */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
@@ -5411,6 +5375,15 @@
 			);
 			name = "Pods-ZJFund_Example";
 			path = "Target Support Files/Pods-ZJFund_Example";
+			sourceTree = "<group>";
+		};
+		D65090112B34298200951E79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D65090122B34299C00951E79 /* BaseView.swift */,
+				D65090142B3429B500951E79 /* BaseCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -6855,7 +6828,6 @@
 				7B6DC4944C4BC143CDA13855122AA46A /* ZJRegion-ZJRegion */,
 				A0377C64DAF9ABBACC16A79B41BCB7D3 /* ZJRequest */,
 				AAE22500BC2CD615C7A4E74F54F26383 /* ZJRequest-ZJRequest */,
-				AAE22500BC2CD615C7A4E74F54F26383 /* ZJRequest-ZJRequest */,
 				D0F03F9BA21701195DC87B60C863AD5A /* ZJRoutableTargets */,
 				0E2AAE8971B6BB33608009A183D6D8F5 /* ZJRoutableTargets-ZJRoutableTargets */,
 				3DF3942BDBA35FB0BE020625D27CF382 /* ZJRouter */,
@@ -7177,13 +7149,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		46EB2E00009EC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46EB2E00009F50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -8210,13 +8175,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00009230 /* BaseViewController.swift in Sources */,
-				46EB2E000091F0 /* RxSwiftViewController.swift in Sources */,
-				46EB2E00009200 /* SwiftViewController.swift in Sources */,
+				46EB2E00009230 /* BaseVC.swift in Sources */,
+				46EB2E000091F0 /* RxSwiftVC.swift in Sources */,
+				46EB2E00009200 /* SwiftVC.swift in Sources */,
 				46EB2E000092D0 /* ZJFund-dummy.m in Sources */,
+				D65090152B3429B500951E79 /* BaseCell.swift in Sources */,
+				D65090172B342C6800951E79 /* BaseListVC.swift in Sources */,
+				D65090192B34333D00951E79 /* GenericsVC.swift in Sources */,
 				46EB2E00009210 /* ZJFundCell.swift in Sources */,
 				46EB2E00009240 /* ZJFundModule.swift in Sources */,
-				46EB2E00009220 /* ZJFundViewController.swift in Sources */,
+				46EB2E00009220 /* ZJFundVC.swift in Sources */,
+				D65090132B34299C00951E79 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8341,13 +8310,6 @@
 				46EB2E0000A060 /* ZJRequestPrintPlugin.swift in Sources */,
 				46EB2E0000A070 /* ZJRequestResult.swift in Sources */,
 				46EB2E0000A080 /* ZJRequestTargetType.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46EB2E00009F30 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9199,8 +9161,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -11615,38 +11576,6 @@
 			};
 			name = Debug;
 		};
-		46EB2E00009F00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E0000A0D0 /* ZJRequest.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZJRequest";
-				IBSC_MODULE = ZJRequest;
-				INFOPLIST_FILE = "Target Support Files/ZJRequest/ResourceBundle-ZJRequest-ZJRequest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZJRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		46EB2E00009F10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E0000A0C0 /* ZJRequest.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZJRequest";
-				IBSC_MODULE = ZJRequest;
-				INFOPLIST_FILE = "Target Support Files/ZJRequest/ResourceBundle-ZJRequest-ZJRequest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = ZJRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		46EB2E00009FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46EB2E0000A0D0 /* ZJRequest.release.xcconfig */;
@@ -12344,15 +12273,6 @@
 			buildConfigurations = (
 				46EB2E00009E70 /* Debug */,
 				46EB2E00009E60 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46EB2E00009EF0 /* Build configuration list for PBXNativeTarget "ZJRequest-ZJRequest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				46EB2E00009F10 /* Debug */,
-				46EB2E00009F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
