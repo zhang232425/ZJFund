@@ -16,7 +16,19 @@ public struct ZJFundModule: ZJModule {
     public func initialize() {
         
         ZJFundRoutableTarget.register(path: ZJFundRoutePath.fund) { _ in
-            return ZJNavigationController(rootViewController: ZJFundVC())
+            return BaseNavigationVC(rootViewController: ZJFundVC())
+        }
+        
+        ZJFundRoutableTarget.register(path: ZJFundRoutePath.swift) { _ in
+            return BaseNavigationVC(rootViewController: SwiftVC())
+        }
+        
+        ZJFundRoutableTarget.register(path: ZJFundRoutePath.rxSwift) { _ in
+            return BaseNavigationVC(rootViewController: RxSwiftVC())
+        }
+        
+        ZJFundRoutableTarget.register(path: ZJFundRoutePath.vendors) { _ in
+            return BaseNavigationVC(rootViewController: VendorsVC())
         }
         
     }

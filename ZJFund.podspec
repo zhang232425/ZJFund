@@ -31,6 +31,12 @@ Pod::Spec.new do |s|
   s.dependency 'RxDataSources'
   s.dependency 'RxSwiftExt'
   
+  s.dependency 'SwiftDate'
+  s.dependency 'SideMenu'
+  s.dependency 'AAInfographics'
+  s.dependency 'Charts'
+  s.dependency 'FMDB'
+  
   s.dependency 'ZJRequest'
   s.dependency 'ZJLocalizable'
   s.dependency 'ZJRouter'

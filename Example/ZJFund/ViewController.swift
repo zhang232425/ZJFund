@@ -9,20 +9,45 @@
 import UIKit
 import ZJRoutableTargets
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-    }
-
-    @IBAction func fundClick() {
+        
+        var controllers = [UIViewController]()
         
         if let vc = ZJFundRoutableTarget.fund.viewController {
-            present(vc, animated: true)
+            
+            vc.tabBarItem = .init(title: "Fund", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(vc)
+            
         }
         
+        if let vc = ZJFundRoutableTarget.swift.viewController {
+            
+            vc.tabBarItem = .init(title: "Swift", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(vc)
+            
+        }
+        
+        if let vc = ZJFundRoutableTarget.rxSwift.viewController {
+            
+            vc.tabBarItem = .init(title: "RxSwift", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(vc)
+            
+        }
+        
+        if let vc = ZJFundRoutableTarget.vendors.viewController {
+            
+            vc.tabBarItem = .init(title: "Vendors", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(vc)
+            
+        }
+        
+        viewControllers = controllers
+        
     }
-    
 
 }
 

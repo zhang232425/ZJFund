@@ -7,10 +7,11 @@
 
 import UIKit
 
-class BaseCell: UITableViewCell {
+class BaseListCell: UITableViewCell {
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.selectionStyle = .none
         setupViews()
     }
     

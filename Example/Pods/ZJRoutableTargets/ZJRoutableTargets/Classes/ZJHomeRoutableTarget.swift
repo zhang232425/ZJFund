@@ -11,10 +11,12 @@ public struct ZJHomeRoutePath {}
 
 public extension ZJHomeRoutePath {
     static let home = ZJRoutePath(value: "as://home.home")
+    static let test = ZJRoutePath(value: "as://home.test")
 }
 
 public enum ZJHomeRoutableTarget: ZJRoutableTarget {
     case home
+    case test
 }
 
 extension ZJHomeRoutableTarget {
@@ -23,12 +25,16 @@ extension ZJHomeRoutableTarget {
         switch self {
         case .home:
             return ZJHomeRoutePath.home
+        case .test:
+            return ZJHomeRoutePath.test
         }
     }
     
     public var parameters: [String : Any]? {
         switch self {
         case .home:
+            return nil
+        case .test:
             return nil
         }
     }
