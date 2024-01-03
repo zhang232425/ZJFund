@@ -846,7 +846,7 @@ private extension HanggeInfographicsVC {
     
     func chart18() {
         
-        let options = setupOptions()
+//        let options = setupOptions()
         
 //        chartView.aa_drawChartWithChartOptions(options)
         

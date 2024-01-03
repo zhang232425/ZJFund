@@ -30,6 +30,8 @@ private extension ZJFundCell {
     
     func setupViews() {
         
+        self.selectionStyle = .none
+        
         titleLabel.add(to: contentView).snp.makeConstraints {
             $0.left.equalToSuperview().inset(15.auto)
             $0.centerY.equalToSuperview()

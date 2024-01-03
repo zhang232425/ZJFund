@@ -1261,6 +1261,7 @@
 		46EB2E0000D6D0 /* ZJExtension-ZJExtension in Resources */ = {isa = PBXBuildFile; fileRef = 50BE319FD3D9034322E01224F31E651F /* ZJExtension-ZJExtension */; };
 		46EB2E0000DAC0 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000DBB0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
+		D645318F2B45022400B33F2B /* CAShapeLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645318E2B45022400B33F2B /* CAShapeLayerVC.swift */; };
 		D6476A7A2B3AC07700020DBF /* AAInfographicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A792B3AC07700020DBF /* AAInfographicsVC.swift */; };
 		D6476A7C2B3AC08600020DBF /* ChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A7B2B3AC08600020DBF /* ChartsVC.swift */; };
 		D6476A7E2B3AC09500020DBF /* FMDBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A7D2B3AC09500020DBF /* FMDBVC.swift */; };
@@ -1268,6 +1269,13 @@
 		D6476A842B3ADB1B00020DBF /* BasicChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A832B3ADB1B00020DBF /* BasicChartVC.swift */; };
 		D661CE642B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661CE632B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift */; };
 		D661CE662B3BFEA40017B3F7 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661CE652B3BFEA40017B3F7 /* BaseNavigationVC.swift */; };
+		D68CDBC12B3E9B9100D72379 /* ZJTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBC02B3E9B9100D72379 /* ZJTextView.swift */; };
+		D68CDBC72B3EA6CF00D72379 /* CoreGraphicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBC62B3EA6CF00D72379 /* CoreGraphicsVC.swift */; };
+		D68CDBC92B3EA6E500D72379 /* CoreAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBC82B3EA6E500D72379 /* CoreAnimationVC.swift */; };
+		D68CDBCC2B3EAA5000D72379 /* CAGradientLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBCB2B3EAA5000D72379 /* CAGradientLayerVC.swift */; };
+		D6C38AD42B3D718E008AA645 /* DrawRectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD32B3D718E008AA645 /* DrawRectVC.swift */; };
+		D6C38AD62B3D75F6008AA645 /* DrawRectContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD52B3D75F6008AA645 /* DrawRectContentVC.swift */; };
+		D6C38AD92B3D76DC008AA645 /* ZJLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD82B3D76DC008AA645 /* ZJLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3576,6 +3584,7 @@
 		CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRequest-ZJRequest"; path = ZJRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645318E2B45022400B33F2B /* CAShapeLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAShapeLayerVC.swift; sourceTree = "<group>"; };
 		D6476A792B3AC07700020DBF /* AAInfographicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAInfographicsVC.swift; sourceTree = "<group>"; };
 		D6476A7B2B3AC08600020DBF /* ChartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsVC.swift; sourceTree = "<group>"; };
 		D6476A7D2B3AC09500020DBF /* FMDBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMDBVC.swift; sourceTree = "<group>"; };
@@ -3583,6 +3592,13 @@
 		D6476A832B3ADB1B00020DBF /* BasicChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicChartVC.swift; sourceTree = "<group>"; };
 		D661CE632B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeInfographicsVC.swift; sourceTree = "<group>"; };
 		D661CE652B3BFEA40017B3F7 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
+		D68CDBC02B3E9B9100D72379 /* ZJTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJTextView.swift; sourceTree = "<group>"; };
+		D68CDBC62B3EA6CF00D72379 /* CoreGraphicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsVC.swift; sourceTree = "<group>"; };
+		D68CDBC82B3EA6E500D72379 /* CoreAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationVC.swift; sourceTree = "<group>"; };
+		D68CDBCB2B3EAA5000D72379 /* CAGradientLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerVC.swift; sourceTree = "<group>"; };
+		D6C38AD32B3D718E008AA645 /* DrawRectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectVC.swift; sourceTree = "<group>"; };
+		D6C38AD52B3D75F6008AA645 /* DrawRectContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectContentVC.swift; sourceTree = "<group>"; };
+		D6C38AD82B3D76DC008AA645 /* ZJLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJLineView.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5693,7 +5709,6 @@
 		46EB2E00004600 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00004610 /* CALayerVC.swift */,
 				46EB2E00004620 /* GenericsVC.swift */,
 				46EB2E00004630 /* SwiftVC.swift */,
 			);
@@ -5734,6 +5749,12 @@
 		46EB2E000046C0 /* ZJFund */ = {
 			isa = PBXGroup;
 			children = (
+				D645318D2B45020B00B33F2B /* CAShapeLayer */,
+				D68CDBCA2B3EAA4200D72379 /* CAGradientLayer */,
+				D68CDBC42B3EA63900D72379 /* DrawRect */,
+				D68CDBC32B3EA5A900D72379 /* CoreAnimation */,
+				D68CDBC22B3EA59C00D72379 /* CoreGraphics */,
+				D6C38AD22B3D7163008AA645 /* CALayer */,
 				46EB2E000046D0 /* ZJFundCell.swift */,
 				46EB2E000046E0 /* ZJFundVC.swift */,
 			);
@@ -6508,6 +6529,14 @@
 			path = "Target Support Files/Pods-ZJFund_Example";
 			sourceTree = "<group>";
 		};
+		D645318D2B45020B00B33F2B /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D645318E2B45022400B33F2B /* CAShapeLayerVC.swift */,
+			);
+			path = CAShapeLayer;
+			sourceTree = "<group>";
+		};
 		D6476A7F2B3AC32400020DBF /* AAInfographics */ = {
 			isa = PBXGroup;
 			children = (
@@ -6525,6 +6554,65 @@
 				D6476A7B2B3AC08600020DBF /* ChartsVC.swift */,
 			);
 			path = Charts;
+			sourceTree = "<group>";
+		};
+		D68CDBC22B3EA59C00D72379 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				D68CDBC62B3EA6CF00D72379 /* CoreGraphicsVC.swift */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		D68CDBC32B3EA5A900D72379 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D68CDBC82B3EA6E500D72379 /* CoreAnimationVC.swift */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		D68CDBC42B3EA63900D72379 /* DrawRect */ = {
+			isa = PBXGroup;
+			children = (
+				D68CDBC52B3EA65E00D72379 /* Controller */,
+				D6C38AD72B3D76BB008AA645 /* View */,
+			);
+			path = DrawRect;
+			sourceTree = "<group>";
+		};
+		D68CDBC52B3EA65E00D72379 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6C38AD32B3D718E008AA645 /* DrawRectVC.swift */,
+				D6C38AD52B3D75F6008AA645 /* DrawRectContentVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D68CDBCA2B3EAA4200D72379 /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D68CDBCB2B3EAA5000D72379 /* CAGradientLayerVC.swift */,
+			);
+			path = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		D6C38AD22B3D7163008AA645 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00004610 /* CALayerVC.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		D6C38AD72B3D76BB008AA645 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C38AD82B3D76DC008AA645 /* ZJLineView.swift */,
+				D68CDBC02B3E9B9100D72379 /* ZJTextView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -9775,29 +9863,37 @@
 			files = (
 				46EB2E0000B8A0 /* BaseCell.swift in Sources */,
 				D6476A7E2B3AC09500020DBF /* FMDBVC.swift in Sources */,
+				D645318F2B45022400B33F2B /* CAShapeLayerVC.swift in Sources */,
 				46EB2E0000B880 /* BaseListVC.swift in Sources */,
 				46EB2E0000B890 /* BaseVC.swift in Sources */,
 				D6476A822B3AC8A900020DBF /* AAInfographicsCell.swift in Sources */,
 				46EB2E0000B8B0 /* BaseView.swift in Sources */,
 				46EB2E0000B850 /* Bundle+Extension.swift in Sources */,
 				D6476A7A2B3AC07700020DBF /* AAInfographicsVC.swift in Sources */,
+				D6C38AD62B3D75F6008AA645 /* DrawRectContentVC.swift in Sources */,
 				D6476A7C2B3AC08600020DBF /* ChartsVC.swift in Sources */,
 				46EB2E0000B7B0 /* CALayerVC.swift in Sources */,
+				D6C38AD92B3D76DC008AA645 /* ZJLineView.swift in Sources */,
+				D6C38AD42B3D718E008AA645 /* DrawRectVC.swift in Sources */,
 				46EB2E0000B860 /* Date+Extension.swift in Sources */,
 				46EB2E0000B7C0 /* GenericsVC.swift in Sources */,
+				D68CDBC12B3E9B9100D72379 /* ZJTextView.swift in Sources */,
 				46EB2E0000B7E0 /* MenuSectionVC.swift in Sources */,
 				46EB2E0000B8C0 /* Namespace.swift in Sources */,
 				D6476A842B3ADB1B00020DBF /* BasicChartVC.swift in Sources */,
+				D68CDBCC2B3EAA5000D72379 /* CAGradientLayerVC.swift in Sources */,
 				46EB2E0000B7A0 /* RxSwiftVC.swift in Sources */,
 				D661CE642B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift in Sources */,
 				D661CE662B3BFEA40017B3F7 /* BaseNavigationVC.swift in Sources */,
 				46EB2E0000B7F0 /* SideMenuVC.swift in Sources */,
+				D68CDBC72B3EA6CF00D72379 /* CoreGraphicsVC.swift in Sources */,
 				46EB2E0000B800 /* SwiftDateVC.swift in Sources */,
 				46EB2E0000B7D0 /* SwiftVC.swift in Sources */,
 				46EB2E0000B870 /* UIImage+Extension.swift in Sources */,
 				46EB2E0000B820 /* VendorsCell.swift in Sources */,
 				46EB2E0000B810 /* VendorsVC.swift in Sources */,
 				46EB2E0000B960 /* ZJFund-dummy.m in Sources */,
+				D68CDBC92B3EA6E500D72379 /* CoreAnimationVC.swift in Sources */,
 				46EB2E0000B830 /* ZJFundCell.swift in Sources */,
 				46EB2E0000B8D0 /* ZJFundModule.swift in Sources */,
 				46EB2E0000B840 /* ZJFundVC.swift in Sources */,
