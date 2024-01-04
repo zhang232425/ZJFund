@@ -38,7 +38,7 @@ import RxSwiftExt
 
 class CALayerVC: BaseListVC {
     
-    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["DrawRect", "CAGradientLayer", "CAShapeLayer", "CoreGraphics", "CoreAnimation", "Transform"])])
+    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["DrawRect", "View mask", "UIResponder", "CAGradientLayer", "CAShapeLayer", "CoreGraphics", "CoreAnimation", "Transform"])])
     
     private var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String, String>>!
     
@@ -101,6 +101,11 @@ private extension CALayerVC {
             
         case "DrawRect":
             let vc = DrawRectVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "View mask":
+            let vc = MaskVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

@@ -1276,6 +1276,7 @@
 		D6C38AD42B3D718E008AA645 /* DrawRectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD32B3D718E008AA645 /* DrawRectVC.swift */; };
 		D6C38AD62B3D75F6008AA645 /* DrawRectContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD52B3D75F6008AA645 /* DrawRectContentVC.swift */; };
 		D6C38AD92B3D76DC008AA645 /* ZJLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD82B3D76DC008AA645 /* ZJLineView.swift */; };
+		D6D4A4122B4649890059009D /* MaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4A4112B4649890059009D /* MaskVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3600,6 +3601,7 @@
 		D6C38AD52B3D75F6008AA645 /* DrawRectContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawRectContentVC.swift; sourceTree = "<group>"; };
 		D6C38AD82B3D76DC008AA645 /* ZJLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJLineView.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D4A4112B4649890059009D /* MaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskVC.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930AB7584A69BE7DA9C0E05191A0E53 /* ZJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRefresh; path = ZJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6602,6 +6604,7 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E00004610 /* CALayerVC.swift */,
+				D6D4A4112B4649890059009D /* MaskVC.swift */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -9879,6 +9882,7 @@
 				46EB2E0000B7C0 /* GenericsVC.swift in Sources */,
 				D68CDBC12B3E9B9100D72379 /* ZJTextView.swift in Sources */,
 				46EB2E0000B7E0 /* MenuSectionVC.swift in Sources */,
+				D6D4A4122B4649890059009D /* MaskVC.swift in Sources */,
 				46EB2E0000B8C0 /* Namespace.swift in Sources */,
 				D6476A842B3ADB1B00020DBF /* BasicChartVC.swift in Sources */,
 				D68CDBCC2B3EAA5000D72379 /* CAGradientLayerVC.swift in Sources */,
