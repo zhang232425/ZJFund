@@ -17,7 +17,7 @@ class VendorsVC: BaseListVC {
      private lazy var items = BehaviorRelay(value: [SectionModel(model: "", items: titles)])
      */
     
-    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB"]
+    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit"]
     
     private lazy var datas = BehaviorRelay(value: [SectionModel(model: "", items: items)])
     
@@ -100,6 +100,11 @@ private extension VendorsVC {
             
         case "FMDB":
             let vc = FMDBVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "SwipeCellKit":
+            let vc = SwipeVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

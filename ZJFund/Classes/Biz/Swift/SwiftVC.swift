@@ -96,7 +96,7 @@ private extension SwiftVC {
     
 }
 
-fileprivate class ZJListCell: BaseListCell {
+class ZJListCell: BaseListCell {
     
     private lazy var titleLabel = UILabel().then {
         $0.font = UIFont.bold15
