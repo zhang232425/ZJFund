@@ -1261,6 +1261,9 @@
 		46EB2E0000D6D0 /* ZJExtension-ZJExtension in Resources */ = {isa = PBXBuildFile; fileRef = 50BE319FD3D9034322E01224F31E651F /* ZJExtension-ZJExtension */; };
 		46EB2E0000DAC0 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000DBB0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
+		D61B34432B4FCD2A00B8769E /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B34422B4FCD2A00B8769E /* UIViewController+Rx.swift */; };
+		D61B34452B4FDC3400B8769E /* HanggeCocoaRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B34442B4FDC3400B8769E /* HanggeCocoaRxVC.swift */; };
+		D61B34482B4FEEF200B8769E /* HanggeExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B34472B4FEEF200B8769E /* HanggeExampleVC.swift */; };
 		D645318F2B45022400B33F2B /* CAShapeLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645318E2B45022400B33F2B /* CAShapeLayerVC.swift */; };
 		D6476A7A2B3AC07700020DBF /* AAInfographicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A792B3AC07700020DBF /* AAInfographicsVC.swift */; };
 		D6476A7C2B3AC08600020DBF /* ChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A7B2B3AC08600020DBF /* ChartsVC.swift */; };
@@ -1269,6 +1272,7 @@
 		D6476A842B3ADB1B00020DBF /* BasicChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6476A832B3ADB1B00020DBF /* BasicChartVC.swift */; };
 		D661CE642B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661CE632B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift */; };
 		D661CE662B3BFEA40017B3F7 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D661CE652B3BFEA40017B3F7 /* BaseNavigationVC.swift */; };
+		D66F4E102B4D4AF800210805 /* ZJControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F4E0F2B4D4AF800210805 /* ZJControl+Rx.swift */; };
 		D68CDBC12B3E9B9100D72379 /* ZJTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBC02B3E9B9100D72379 /* ZJTextView.swift */; };
 		D68CDBC72B3EA6CF00D72379 /* CoreGraphicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBC62B3EA6CF00D72379 /* CoreGraphicsVC.swift */; };
 		D68CDBC92B3EA6E500D72379 /* CoreAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68CDBC82B3EA6E500D72379 /* CoreAnimationVC.swift */; };
@@ -1278,6 +1282,10 @@
 		D6C38AD92B3D76DC008AA645 /* ZJLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C38AD82B3D76DC008AA645 /* ZJLineView.swift */; };
 		D6C9E9AB2B4BA5E000D2F6FE /* SwipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9E9AA2B4BA5E000D2F6FE /* SwipeVC.swift */; };
 		D6C9E9B12B4BF46F00D2F6FE /* HanggeRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9E9B02B4BF46F00D2F6FE /* HanggeRxVC.swift */; };
+		D6CF1B772B4E3325000602E6 /* ZJUILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF1B762B4E3325000602E6 /* ZJUILabel+Rx.swift */; };
+		D6D10AD82B50D9A900D46D68 /* HanggeExampleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10AD72B50D9A900D46D68 /* HanggeExampleVM.swift */; };
+		D6D10ADA2B50DFF600D46D68 /* HanggeNetworkRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10AD92B50DFF600D46D68 /* HanggeNetworkRxVC.swift */; };
+		D6D10ADC2B50E01000D46D68 /* HanggeOtherRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10ADB2B50E01000D46D68 /* HanggeOtherRxVC.swift */; };
 		D6D4A4122B4649890059009D /* MaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4A4112B4649890059009D /* MaskVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -3587,6 +3595,9 @@
 		CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRequest-ZJRequest"; path = ZJRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61B34422B4FCD2A00B8769E /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		D61B34442B4FDC3400B8769E /* HanggeCocoaRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeCocoaRxVC.swift; sourceTree = "<group>"; };
+		D61B34472B4FEEF200B8769E /* HanggeExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeExampleVC.swift; sourceTree = "<group>"; };
 		D645318E2B45022400B33F2B /* CAShapeLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAShapeLayerVC.swift; sourceTree = "<group>"; };
 		D6476A792B3AC07700020DBF /* AAInfographicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAInfographicsVC.swift; sourceTree = "<group>"; };
 		D6476A7B2B3AC08600020DBF /* ChartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsVC.swift; sourceTree = "<group>"; };
@@ -3595,6 +3606,7 @@
 		D6476A832B3ADB1B00020DBF /* BasicChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicChartVC.swift; sourceTree = "<group>"; };
 		D661CE632B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeInfographicsVC.swift; sourceTree = "<group>"; };
 		D661CE652B3BFEA40017B3F7 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
+		D66F4E0F2B4D4AF800210805 /* ZJControl+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZJControl+Rx.swift"; sourceTree = "<group>"; };
 		D68CDBC02B3E9B9100D72379 /* ZJTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJTextView.swift; sourceTree = "<group>"; };
 		D68CDBC62B3EA6CF00D72379 /* CoreGraphicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsVC.swift; sourceTree = "<group>"; };
 		D68CDBC82B3EA6E500D72379 /* CoreAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationVC.swift; sourceTree = "<group>"; };
@@ -3605,6 +3617,10 @@
 		D6C9E9AA2B4BA5E000D2F6FE /* SwipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeVC.swift; sourceTree = "<group>"; };
 		D6C9E9B02B4BF46F00D2F6FE /* HanggeRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeRxVC.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CF1B762B4E3325000602E6 /* ZJUILabel+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZJUILabel+Rx.swift"; sourceTree = "<group>"; };
+		D6D10AD72B50D9A900D46D68 /* HanggeExampleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeExampleVM.swift; sourceTree = "<group>"; };
+		D6D10AD92B50DFF600D46D68 /* HanggeNetworkRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeNetworkRxVC.swift; sourceTree = "<group>"; };
+		D6D10ADB2B50E01000D46D68 /* HanggeOtherRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeOtherRxVC.swift; sourceTree = "<group>"; };
 		D6D4A4112B4649890059009D /* MaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskVC.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6636,6 +6652,14 @@
 			isa = PBXGroup;
 			children = (
 				D6C9E9B02B4BF46F00D2F6FE /* HanggeRxVC.swift */,
+				D61B34442B4FDC3400B8769E /* HanggeCocoaRxVC.swift */,
+				D6D10AD92B50DFF600D46D68 /* HanggeNetworkRxVC.swift */,
+				D6D10ADB2B50E01000D46D68 /* HanggeOtherRxVC.swift */,
+				D61B34472B4FEEF200B8769E /* HanggeExampleVC.swift */,
+				D6D10AD72B50D9A900D46D68 /* HanggeExampleVM.swift */,
+				D66F4E0F2B4D4AF800210805 /* ZJControl+Rx.swift */,
+				D6CF1B762B4E3325000602E6 /* ZJUILabel+Rx.swift */,
+				D61B34422B4FCD2A00B8769E /* UIViewController+Rx.swift */,
 			);
 			path = HanggeRx;
 			sourceTree = "<group>";
@@ -9892,12 +9916,15 @@
 				46EB2E0000B880 /* BaseListVC.swift in Sources */,
 				46EB2E0000B890 /* BaseVC.swift in Sources */,
 				D6476A822B3AC8A900020DBF /* AAInfographicsCell.swift in Sources */,
+				D6D10ADC2B50E01000D46D68 /* HanggeOtherRxVC.swift in Sources */,
 				46EB2E0000B8B0 /* BaseView.swift in Sources */,
+				D66F4E102B4D4AF800210805 /* ZJControl+Rx.swift in Sources */,
 				46EB2E0000B850 /* Bundle+Extension.swift in Sources */,
 				D6476A7A2B3AC07700020DBF /* AAInfographicsVC.swift in Sources */,
 				D6C38AD62B3D75F6008AA645 /* DrawRectContentVC.swift in Sources */,
 				D6476A7C2B3AC08600020DBF /* ChartsVC.swift in Sources */,
 				D6C9E9AB2B4BA5E000D2F6FE /* SwipeVC.swift in Sources */,
+				D6D10AD82B50D9A900D46D68 /* HanggeExampleVM.swift in Sources */,
 				46EB2E0000B7B0 /* CALayerVC.swift in Sources */,
 				D6C38AD92B3D76DC008AA645 /* ZJLineView.swift in Sources */,
 				D6C38AD42B3D718E008AA645 /* DrawRectVC.swift in Sources */,
@@ -9908,23 +9935,28 @@
 				D6D4A4122B4649890059009D /* MaskVC.swift in Sources */,
 				D6C9E9B12B4BF46F00D2F6FE /* HanggeRxVC.swift in Sources */,
 				46EB2E0000B8C0 /* Namespace.swift in Sources */,
+				D61B34482B4FEEF200B8769E /* HanggeExampleVC.swift in Sources */,
 				D6476A842B3ADB1B00020DBF /* BasicChartVC.swift in Sources */,
 				D68CDBCC2B3EAA5000D72379 /* CAGradientLayerVC.swift in Sources */,
 				46EB2E0000B7A0 /* RxSwiftVC.swift in Sources */,
+				D61B34452B4FDC3400B8769E /* HanggeCocoaRxVC.swift in Sources */,
 				D661CE642B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift in Sources */,
 				D661CE662B3BFEA40017B3F7 /* BaseNavigationVC.swift in Sources */,
 				46EB2E0000B7F0 /* SideMenuVC.swift in Sources */,
 				D68CDBC72B3EA6CF00D72379 /* CoreGraphicsVC.swift in Sources */,
 				46EB2E0000B800 /* SwiftDateVC.swift in Sources */,
 				46EB2E0000B7D0 /* SwiftVC.swift in Sources */,
+				D6D10ADA2B50DFF600D46D68 /* HanggeNetworkRxVC.swift in Sources */,
 				46EB2E0000B870 /* UIImage+Extension.swift in Sources */,
 				46EB2E0000B820 /* VendorsCell.swift in Sources */,
+				D61B34432B4FCD2A00B8769E /* UIViewController+Rx.swift in Sources */,
 				46EB2E0000B810 /* VendorsVC.swift in Sources */,
 				46EB2E0000B960 /* ZJFund-dummy.m in Sources */,
 				D68CDBC92B3EA6E500D72379 /* CoreAnimationVC.swift in Sources */,
 				46EB2E0000B830 /* ZJFundCell.swift in Sources */,
 				46EB2E0000B8D0 /* ZJFundModule.swift in Sources */,
 				46EB2E0000B840 /* ZJFundVC.swift in Sources */,
+				D6CF1B772B4E3325000602E6 /* ZJUILabel+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
