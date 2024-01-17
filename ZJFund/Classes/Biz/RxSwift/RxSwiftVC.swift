@@ -84,7 +84,7 @@ private extension RxSwiftVC {
             self.navigationController?.pushViewController(vc, animated: true)
             
         case "RxExample":
-            let vc = HanggeRxVC()
+            let vc = RxExampleVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

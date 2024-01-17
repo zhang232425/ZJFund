@@ -1261,6 +1261,12 @@
 		46EB2E0000D6D0 /* ZJExtension-ZJExtension in Resources */ = {isa = PBXBuildFile; fileRef = 50BE319FD3D9034322E01224F31E651F /* ZJExtension-ZJExtension */; };
 		46EB2E0000DAC0 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000DBB0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
+		D60349F42B562FA000EFE906 /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60349F32B562FA000EFE906 /* DefaultImplementations.swift */; };
+		D60349F62B56306F00EFE906 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60349F52B56306F00EFE906 /* BindingExtensions.swift */; };
+		D60349F82B56313A00EFE906 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60349F72B56313A00EFE906 /* Protocols.swift */; };
+		D60349FA2B56780800EFE906 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60349F92B56780800EFE906 /* ActivityIndicator.swift */; };
+		D60349FC2B56844A00EFE906 /* DefaultWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60349FB2B56844A00EFE906 /* DefaultWireframe.swift */; };
+		D60349FE2B569EE600EFE906 /* HanggeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60349FD2B569EE600EFE906 /* HanggeListVC.swift */; };
 		D61B34432B4FCD2A00B8769E /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B34422B4FCD2A00B8769E /* UIViewController+Rx.swift */; };
 		D61B34452B4FDC3400B8769E /* HanggeCocoaRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B34442B4FDC3400B8769E /* HanggeCocoaRxVC.swift */; };
 		D61B34482B4FEEF200B8769E /* HanggeExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B34472B4FEEF200B8769E /* HanggeExampleVC.swift */; };
@@ -1283,10 +1289,14 @@
 		D6C9E9AB2B4BA5E000D2F6FE /* SwipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9E9AA2B4BA5E000D2F6FE /* SwipeVC.swift */; };
 		D6C9E9B12B4BF46F00D2F6FE /* HanggeRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C9E9B02B4BF46F00D2F6FE /* HanggeRxVC.swift */; };
 		D6CF1B772B4E3325000602E6 /* ZJUILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF1B762B4E3325000602E6 /* ZJUILabel+Rx.swift */; };
-		D6D10AD82B50D9A900D46D68 /* HanggeExampleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10AD72B50D9A900D46D68 /* HanggeExampleVM.swift */; };
 		D6D10ADA2B50DFF600D46D68 /* HanggeNetworkRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10AD92B50DFF600D46D68 /* HanggeNetworkRxVC.swift */; };
 		D6D10ADC2B50E01000D46D68 /* HanggeOtherRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D10ADB2B50E01000D46D68 /* HanggeOtherRxVC.swift */; };
 		D6D4A4122B4649890059009D /* MaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4A4112B4649890059009D /* MaskVC.swift */; };
+		D6DFDD022B550CFA009DFB3A /* RxExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DFDD012B550CFA009DFB3A /* RxExampleVC.swift */; };
+		D6DFDD042B551847009DFB3A /* AddingNumbersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DFDD032B551847009DFB3A /* AddingNumbersVC.swift */; };
+		D6DFDD062B55246D009DFB3A /* SimpleValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DFDD052B55246D009DFB3A /* SimpleValidationVC.swift */; };
+		D6DFDD092B553F31009DFB3A /* GitHubSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DFDD082B553F31009DFB3A /* GitHubSignupVC.swift */; };
+		D6DFDD0B2B5549B9009DFB3A /* GitHubSignupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DFDD0A2B5549B9009DFB3A /* GitHubSignupVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3595,6 +3605,12 @@
 		CD63405120225602F8DF676BC778C745 /* ZJRequest-ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJRequest-ZJRequest"; path = ZJRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60349F32B562FA000EFE906 /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
+		D60349F52B56306F00EFE906 /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		D60349F72B56313A00EFE906 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		D60349F92B56780800EFE906 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		D60349FB2B56844A00EFE906 /* DefaultWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWireframe.swift; sourceTree = "<group>"; };
+		D60349FD2B569EE600EFE906 /* HanggeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeListVC.swift; sourceTree = "<group>"; };
 		D61B34422B4FCD2A00B8769E /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		D61B34442B4FDC3400B8769E /* HanggeCocoaRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeCocoaRxVC.swift; sourceTree = "<group>"; };
 		D61B34472B4FEEF200B8769E /* HanggeExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeExampleVC.swift; sourceTree = "<group>"; };
@@ -3618,10 +3634,14 @@
 		D6C9E9B02B4BF46F00D2F6FE /* HanggeRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeRxVC.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CF1B762B4E3325000602E6 /* ZJUILabel+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZJUILabel+Rx.swift"; sourceTree = "<group>"; };
-		D6D10AD72B50D9A900D46D68 /* HanggeExampleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeExampleVM.swift; sourceTree = "<group>"; };
 		D6D10AD92B50DFF600D46D68 /* HanggeNetworkRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeNetworkRxVC.swift; sourceTree = "<group>"; };
 		D6D10ADB2B50E01000D46D68 /* HanggeOtherRxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeOtherRxVC.swift; sourceTree = "<group>"; };
 		D6D4A4112B4649890059009D /* MaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskVC.swift; sourceTree = "<group>"; };
+		D6DFDD012B550CFA009DFB3A /* RxExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExampleVC.swift; sourceTree = "<group>"; };
+		D6DFDD032B551847009DFB3A /* AddingNumbersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNumbersVC.swift; sourceTree = "<group>"; };
+		D6DFDD052B55246D009DFB3A /* SimpleValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationVC.swift; sourceTree = "<group>"; };
+		D6DFDD082B553F31009DFB3A /* GitHubSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignupVC.swift; sourceTree = "<group>"; };
+		D6DFDD0A2B5549B9009DFB3A /* GitHubSignupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignupVM.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930AB7584A69BE7DA9C0E05191A0E53 /* ZJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRefresh; path = ZJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5724,6 +5744,7 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E000045F0 /* RxSwiftVC.swift */,
+				D6DFDD002B550CE6009DFB3A /* RxExample */,
 				D6C9E9AF2B4BF44900D2F6FE /* HanggeRx */,
 			);
 			path = RxSwift;
@@ -6652,16 +6673,41 @@
 			isa = PBXGroup;
 			children = (
 				D6C9E9B02B4BF46F00D2F6FE /* HanggeRxVC.swift */,
+				D60349FD2B569EE600EFE906 /* HanggeListVC.swift */,
 				D61B34442B4FDC3400B8769E /* HanggeCocoaRxVC.swift */,
 				D6D10AD92B50DFF600D46D68 /* HanggeNetworkRxVC.swift */,
 				D6D10ADB2B50E01000D46D68 /* HanggeOtherRxVC.swift */,
 				D61B34472B4FEEF200B8769E /* HanggeExampleVC.swift */,
-				D6D10AD72B50D9A900D46D68 /* HanggeExampleVM.swift */,
 				D66F4E0F2B4D4AF800210805 /* ZJControl+Rx.swift */,
 				D6CF1B762B4E3325000602E6 /* ZJUILabel+Rx.swift */,
 				D61B34422B4FCD2A00B8769E /* UIViewController+Rx.swift */,
 			);
 			path = HanggeRx;
+			sourceTree = "<group>";
+		};
+		D6DFDD002B550CE6009DFB3A /* RxExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFDD072B553F1F009DFB3A /* GitHubSignup */,
+				D6DFDD012B550CFA009DFB3A /* RxExampleVC.swift */,
+				D6DFDD032B551847009DFB3A /* AddingNumbersVC.swift */,
+				D6DFDD052B55246D009DFB3A /* SimpleValidationVC.swift */,
+			);
+			path = RxExample;
+			sourceTree = "<group>";
+		};
+		D6DFDD072B553F1F009DFB3A /* GitHubSignup */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFDD082B553F31009DFB3A /* GitHubSignupVC.swift */,
+				D6DFDD0A2B5549B9009DFB3A /* GitHubSignupVM.swift */,
+				D60349F32B562FA000EFE906 /* DefaultImplementations.swift */,
+				D60349F52B56306F00EFE906 /* BindingExtensions.swift */,
+				D60349F72B56313A00EFE906 /* Protocols.swift */,
+				D60349F92B56780800EFE906 /* ActivityIndicator.swift */,
+				D60349FB2B56844A00EFE906 /* DefaultWireframe.swift */,
+			);
+			path = GitHubSignup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -9910,6 +9956,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60349FC2B56844A00EFE906 /* DefaultWireframe.swift in Sources */,
 				46EB2E0000B8A0 /* BaseCell.swift in Sources */,
 				D6476A7E2B3AC09500020DBF /* FMDBVC.swift in Sources */,
 				D645318F2B45022400B33F2B /* CAShapeLayerVC.swift in Sources */,
@@ -9921,21 +9968,28 @@
 				D66F4E102B4D4AF800210805 /* ZJControl+Rx.swift in Sources */,
 				46EB2E0000B850 /* Bundle+Extension.swift in Sources */,
 				D6476A7A2B3AC07700020DBF /* AAInfographicsVC.swift in Sources */,
+				D6DFDD0B2B5549B9009DFB3A /* GitHubSignupVM.swift in Sources */,
+				D6DFDD062B55246D009DFB3A /* SimpleValidationVC.swift in Sources */,
+				D60349F42B562FA000EFE906 /* DefaultImplementations.swift in Sources */,
+				D6DFDD042B551847009DFB3A /* AddingNumbersVC.swift in Sources */,
+				D6DFDD022B550CFA009DFB3A /* RxExampleVC.swift in Sources */,
+				D60349FA2B56780800EFE906 /* ActivityIndicator.swift in Sources */,
 				D6C38AD62B3D75F6008AA645 /* DrawRectContentVC.swift in Sources */,
 				D6476A7C2B3AC08600020DBF /* ChartsVC.swift in Sources */,
 				D6C9E9AB2B4BA5E000D2F6FE /* SwipeVC.swift in Sources */,
-				D6D10AD82B50D9A900D46D68 /* HanggeExampleVM.swift in Sources */,
 				46EB2E0000B7B0 /* CALayerVC.swift in Sources */,
 				D6C38AD92B3D76DC008AA645 /* ZJLineView.swift in Sources */,
 				D6C38AD42B3D718E008AA645 /* DrawRectVC.swift in Sources */,
 				46EB2E0000B860 /* Date+Extension.swift in Sources */,
 				46EB2E0000B7C0 /* GenericsVC.swift in Sources */,
+				D6DFDD092B553F31009DFB3A /* GitHubSignupVC.swift in Sources */,
 				D68CDBC12B3E9B9100D72379 /* ZJTextView.swift in Sources */,
 				46EB2E0000B7E0 /* MenuSectionVC.swift in Sources */,
 				D6D4A4122B4649890059009D /* MaskVC.swift in Sources */,
 				D6C9E9B12B4BF46F00D2F6FE /* HanggeRxVC.swift in Sources */,
 				46EB2E0000B8C0 /* Namespace.swift in Sources */,
 				D61B34482B4FEEF200B8769E /* HanggeExampleVC.swift in Sources */,
+				D60349F62B56306F00EFE906 /* BindingExtensions.swift in Sources */,
 				D6476A842B3ADB1B00020DBF /* BasicChartVC.swift in Sources */,
 				D68CDBCC2B3EAA5000D72379 /* CAGradientLayerVC.swift in Sources */,
 				46EB2E0000B7A0 /* RxSwiftVC.swift in Sources */,
@@ -9943,6 +9997,7 @@
 				D661CE642B3BFD6D0017B3F7 /* HanggeInfographicsVC.swift in Sources */,
 				D661CE662B3BFEA40017B3F7 /* BaseNavigationVC.swift in Sources */,
 				46EB2E0000B7F0 /* SideMenuVC.swift in Sources */,
+				D60349F82B56313A00EFE906 /* Protocols.swift in Sources */,
 				D68CDBC72B3EA6CF00D72379 /* CoreGraphicsVC.swift in Sources */,
 				46EB2E0000B800 /* SwiftDateVC.swift in Sources */,
 				46EB2E0000B7D0 /* SwiftVC.swift in Sources */,
@@ -9953,6 +10008,7 @@
 				46EB2E0000B810 /* VendorsVC.swift in Sources */,
 				46EB2E0000B960 /* ZJFund-dummy.m in Sources */,
 				D68CDBC92B3EA6E500D72379 /* CoreAnimationVC.swift in Sources */,
+				D60349FE2B569EE600EFE906 /* HanggeListVC.swift in Sources */,
 				46EB2E0000B830 /* ZJFundCell.swift in Sources */,
 				46EB2E0000B8D0 /* ZJFundModule.swift in Sources */,
 				46EB2E0000B840 /* ZJFundVC.swift in Sources */,

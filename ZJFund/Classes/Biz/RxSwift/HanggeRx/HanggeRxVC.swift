@@ -202,7 +202,11 @@ private extension HanggeRxVC {
     
     @objc func testClick() {
         
-        distinectUntilChanged()
+//        share1()
+        
+        let vc = HanggeListVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
 
     }
     
@@ -1022,6 +1026,17 @@ private extension HanggeRxVC {
         
     }
     
+    
+    /**
+     map：返回的
+     flatMap
+     flatMapLatest
+     Map与FlatMap的联系：都可以对元素进行转换，并且都是返回Observable类型
+     flatMapLatest：闭包返回的是Observable , map 闭包返回值是任意类型
+     */
+    
+   
+    
 }
 
 /** 七
@@ -1356,6 +1371,60 @@ private extension HanggeRxVC {
         
         
 
+    }
+    
+}
+
+/** 十七
+ RxSwift_操作符_share(replay:scope:)
+ */
+
+private extension HanggeRxVC {
+
+    /**
+     share(replay:scope:) 作用：
+     解决有多个订阅者的情况下，避免事件转换操作符（比如：map、flatMap、flatMapLatest等等）被多次执行的问题
+     */
+    func share() {
+        
+        let seq = PublishSubject<Int>()
+        
+        let ob = seq.map {
+            print("map 被调用：---\($0)")
+            return $0 * 2
+        }
+        
+        ob.subscribe(onNext: {
+            print("--第一次订阅--\($0)")
+        }).disposed(by: disposeBag)
+        
+        ob.subscribe(onNext: {
+            print("--第二次订阅--\($0)")
+        }).disposed(by: disposeBag)
+        
+        seq.onNext(1)
+        
+    }
+    
+    func share1() {
+        
+        let net = Observable<String>.create { observable -> Disposable in
+            print("我开始网络请求了")
+            observable.onNext("请求结果")
+            observable.onCompleted()
+            return Disposables.create {
+                print("销毁了")
+            }
+        }
+        
+        net.subscribe(onNext: {
+            print("第一次订阅：\($0)", Thread.current)
+        }).disposed(by: disposeBag)
+        
+        net.subscribe(onNext: {
+            print("第二次订阅：\($0)", Thread.current)
+        }).disposed(by: disposeBag)
+        
     }
     
 }
