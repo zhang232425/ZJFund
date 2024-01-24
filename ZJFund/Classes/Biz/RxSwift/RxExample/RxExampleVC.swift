@@ -12,7 +12,7 @@ import RxDataSources
 
 class RxExampleVC: BaseVC {
     
-    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["Adding numbers", "Simple validation", "GitHubSignup"])])
+    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["Adding numbers", "Simple validation", "GitHubSignup", "WikipediaSearch"])])
     
     private var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String, String>>!
     
@@ -79,6 +79,11 @@ private extension RxExampleVC {
             
         case "GitHubSignup":
             let vc = GitHubSignupVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "WikipediaSearch":
+            let vc = WikipediaSearchVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

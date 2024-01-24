@@ -74,14 +74,10 @@ private extension RxSwiftVC {
             self.navigationController?.pushViewController(vc, animated: true)
             
         case "RxSwift中文文档":
-            let vc = HanggeRxVC()
-            vc.navigationItem.title = text
-            self.navigationController?.pushViewController(vc, animated: true)
+            break
             
         case "RxSwift社区":
-            let vc = HanggeRxVC()
-            vc.navigationItem.title = text
-            self.navigationController?.pushViewController(vc, animated: true)
+            break
             
         case "RxExample":
             let vc = RxExampleVC()

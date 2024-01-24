@@ -103,13 +103,3 @@ class GitHubDefaultAPI: GitHubAPI {
     
 }
 
-/**
- 对字符串进行转义，有可能包含中文，不符合url规范
- */
-fileprivate extension String {
-    
-    var URLEscaped: String {
-        return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
-    }
-    
-}
