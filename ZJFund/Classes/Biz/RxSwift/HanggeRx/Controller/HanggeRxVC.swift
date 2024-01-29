@@ -26,6 +26,24 @@ class HanggeRxVC: BaseVC {
         setupViews()
         bindDatas()
         
+        /// 监听通知
+        let notificationName = Notification.Name(rawValue: "Download.image.success")
+        NotificationCenter.default.addObserver(self, selector: #selector(downloadImage), name: notificationName, object: nil)
+        
+        NotificationCenter.default.rx
+            .notification(notificationName)
+            .take(until: self.rx.deallocated) // 页面销毁自动移除监听
+            .subscribe(onNext: { notification in
+                let info = notification.userInfo as! [String: AnyObject]
+                let username = info["username"] as! String
+                let password = info["password"] as! String
+                print("通知内容【\(username) - \(password)】")
+            }).disposed(by: disposeBag)
+        
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
 }
@@ -46,7 +64,7 @@ private extension HanggeRxVC {
         
         tableView.rx.modelSelected(String.self).subscribeNext(weak: self, HanggeRxVC.listClick).disposed(by: disposeBag)
         
-        datas.accept([SectionModel(model: "", items: ["Observable（序列）", "Observer（订阅者）", "Subjects", "Operator操作符", "Traits特征序列", "View扩展"])])
+        datas.accept([SectionModel(model: "", items: ["Observable（序列）", "Observer（订阅者）", "Subjects", "Operator操作符", "Traits特征序列", "View扩展", "HanggeList", "URLSession+Rx"])])
         
     }
     
@@ -94,9 +112,31 @@ private extension HanggeRxVC {
             let vc = HanggeViewVC()
             self.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
+        case "URLSession+Rx":
+            let vc = HanggeSessionVC()
+            self.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "HanggeList":
+            let vc = HanggeListVC()
+            self.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }
+        
+    }
+    
+}
+
+private extension HanggeRxVC {
+
+    @objc func downloadImage(_ notification: Notification) {
+    
+        let info = notification.userInfo as! [String: AnyObject]
+        let username = info["username"] as! String
+        let password = info["password"] as! String
+
+        print("获取到通知，用户数据 [\(username),\(password)]")
         
     }
     
