@@ -34,14 +34,13 @@
 import Foundation
 
 public class AAYAxis: AAAxis {
-    public var stackLabels: [String: Any]?
+    public var stackLabels: AALabels?
     
     @discardableResult
-    public func stackLabels(_ prop: [String: Any]?) -> AAYAxis {
+    public func stackLabels(_ prop: AALabels?) -> AAYAxis {
         stackLabels = prop
         return self
     }
-    ///----------------------------------------------------------
 
     
     public override init() {

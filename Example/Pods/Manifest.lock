@@ -1,5 +1,5 @@
 PODS:
-  - AAInfographics (7.3.0)
+  - AAInfographics (9.0.0)
   - Action (5.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
@@ -26,6 +26,8 @@ PODS:
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
+  - ObjectMapper (4.2.0)
+  - ReachabilitySwift (5.0.0)
   - RTRootNavigationController (0.8.0):
     - RTRootNavigationController/Core (= 0.8.0)
   - RTRootNavigationController/Core (0.8.0)
@@ -47,9 +49,9 @@ PODS:
   - RxSwiftExt/RxCocoa (6.0.1):
     - RxCocoa (~> 6.0)
     - RxSwiftExt/Core
-  - SDWebImage (5.18.3):
-    - SDWebImage/Core (= 5.18.3)
-  - SDWebImage/Core (5.18.3)
+  - SDWebImage (5.18.10):
+    - SDWebImage/Core (= 5.18.10)
+  - SDWebImage/Core (5.18.10)
   - SideMenu (6.5.0)
   - SnapKit (5.6.0)
   - SwiftDate (6.3.1)
@@ -73,11 +75,15 @@ PODS:
   - ZJExtension (0.1.0):
     - CryptoSwift
     - SDWebImage
+    - SnapKit
   - ZJFund (0.1.0):
     - AAInfographics
     - Action
+    - Alamofire
     - Charts
     - FMDB
+    - ObjectMapper
+    - ReachabilitySwift
     - RxCocoa
     - RxDataSources
     - RxSwift
@@ -160,6 +166,8 @@ SPEC REPOS:
     - KeychainSwift
     - Moya
     - NVActivityIndicatorView
+    - ObjectMapper
+    - ReachabilitySwift
     - RTRootNavigationController
     - RxCocoa
     - RxDataSources
@@ -197,16 +205,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZJBase:
-    :commit: 88d9cec27b7285c5ca636b004eb41f5e28b592e7
+    :commit: 42c3e00d4ea93229339ef3409deedc67889ce621
     :git: "git@github.com:zhang232425/ZJBase.git"
   ZJCommonDefines:
-    :commit: 4d9ba68728ed9fb171e7e72825ad8a67d12b34c4
+    :commit: 83b2c6ed0d19c857ff0211396629c3ac7ecf847b
     :git: "git@github.com:zhang232425/ZJCommonDefines.git"
   ZJCommonView:
     :commit: 0b20bf4f5ebd405ef886b5b4e9356be478a1cd8f
     :git: "git@github.com:zhang232425/ZJCommonView.git"
   ZJExtension:
-    :commit: 6d20ce67b858442ec5cbf537fc6e403b657bd052
+    :commit: 101fb483e31657f55915ae3dd874badf099a3670
     :git: "git@github.com:zhang232425/ZJExtension.git"
   ZJRefresh:
     :commit: d2855ff0b65e3142eb90a561827b7dd07fec044d
@@ -216,7 +224,7 @@ CHECKOUT OPTIONS:
     :git: "git@github.com:zhang232425/ZJRoutableTargets.git"
 
 SPEC CHECKSUMS:
-  AAInfographics: ee2a7959acdd0a00243b7f5a3f03a1fa2bdf0781
+  AAInfographics: 31fd2891509a97e34693aeaf681daa7b2b4d8c0f
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   Charts: 888b39ae772b3dc79d0a0e659f0419ff9bd3e963
@@ -229,13 +237,15 @@ SPEC CHECKSUMS:
   KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
-  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SDWebImage: fc8f2d48bbfd72ef39d70e981bd24a3f3be53fec
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
@@ -245,8 +255,8 @@ SPEC CHECKSUMS:
   ZJCommonDefines: 9fd1e19aafb99bc9014e54e665520bb95aa5a22c
   ZJCommonView: e62b96fa97474a99971531e70e5e90c749d90629
   ZJDevice: bfc36b209a264aa5b877a733c6a7cffa856038db
-  ZJExtension: 696a53ccf69ba7171693e4c370d2672a62a4dfd9
-  ZJFund: 60c71631f8e87b0f12fc08425cd6d04353c97eda
+  ZJExtension: 227faf8dfbd3562eaa7cd9120f41d44bf2b59258
+  ZJFund: 20101ae98136321df223e3b012353db33b611c79
   ZJHUD: d5ca2144a62af4331f7f58386f5e4fbc5f5b2d01
   ZJKeychain: 056dd2cf24a6d44cb41677290742fe46cac94d39
   ZJLocalizable: 3c925ba648064d1da4ddc70c29335d4029fc0445

@@ -42,7 +42,7 @@ class HanggeListVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        headerCollectionList()
+//        headerCollectionList()
     }
     
 }

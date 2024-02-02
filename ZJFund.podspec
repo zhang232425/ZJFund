@@ -36,6 +36,9 @@ Pod::Spec.new do |s|
   s.dependency 'AAInfographics'
   s.dependency 'Charts'
   s.dependency 'FMDB'
+  s.dependency 'ReachabilitySwift'
+  s.dependency 'ObjectMapper'
+  s.dependency 'Alamofire'
   
   s.dependency 'ZJRequest'
   s.dependency 'ZJLocalizable'

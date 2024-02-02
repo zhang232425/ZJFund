@@ -275,36 +275,49 @@ public class AAOptionsConstructor {
             let aaColumn = AAColumn()
                 .borderWidth(0)
                 .borderRadius(aaChartModel.borderRadius)
+
             if (aaChartModel.polar == true) {
                 aaColumn
                     .pointPadding(0)
                     .groupPadding(0.005)
             }
             aaPlotOptions.column(aaColumn)
+            
         case .bar:
             let aaBar = AABar()
                 .borderWidth(0)
                 .borderRadius(aaChartModel.borderRadius)
+
             if (aaChartModel.polar == true) {
                 aaBar
                     .pointPadding(0)
                     .groupPadding(0.005)
             }
             aaPlotOptions.bar(aaBar)
+            
         case .pie:
             if (aaChartModel.dataLabelsEnabled == true) {
                 aaDataLabels.format("<b>{point.name}</b>: {point.percentage:.1f} %")
             }
-            aaPlotOptions
-                .pie(AAPie()
-                         .allowPointSelect(true)
-                         .cursor("pointer")
-                         .showInLegend(true))
+            let aaPie = AAPie()
+                .allowPointSelect(true)
+                .cursor("pointer")
+                .showInLegend(true)
+                .borderRadius(aaChartModel.borderRadius)
+            
+            aaPlotOptions.pie(aaPie)
+            
         case .columnrange:
-            aaPlotOptions
-                .columnrange(AAColumnrange()
-                                 .borderRadius(aaChartModel.borderRadius)
-                                 .borderWidth(0))
+            let aaColumnrange = AAColumnrange()
+                .borderWidth(0)
+                .borderRadius(aaChartModel.borderRadius)
+
+            if (aaChartModel.polar == true) {
+                aaColumnrange
+                    .pointPadding(0)
+                    .groupPadding(0.005)
+            }
+            aaPlotOptions.columnrange(aaColumnrange)
             
         default: break
         }
