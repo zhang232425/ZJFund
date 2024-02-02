@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
   s.dependency 'ReachabilitySwift'
   s.dependency 'ObjectMapper'
   s.dependency 'Alamofire'
+  s.dependency 'RxAlamofire'
   
   s.dependency 'ZJRequest'
   s.dependency 'ZJLocalizable'

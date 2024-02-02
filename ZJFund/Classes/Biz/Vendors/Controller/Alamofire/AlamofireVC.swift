@@ -47,16 +47,7 @@ private extension AlamofireVC {
 private extension AlamofireVC {
     
     func request() {
-        
-        /*
-         AF.request("https://httpbin.org/get").response { response in
-             debugPrint(response)
-         }*/
-        
-        AF.request("https://httpbin.org/get").response { response in
-            debugPrint(response)
-        }
-        
+    
     }
     
 }
