@@ -227,7 +227,7 @@ CHECKOUT OPTIONS:
     :commit: d2855ff0b65e3142eb90a561827b7dd07fec044d
     :git: "git@github.com:zhang232425/ZJRefresh.git"
   ZJRoutableTargets:
-    :commit: 0c29eaa68d8cd32ae879a627cbda118f2d17a5c4
+    :commit: 3b9e2950b5e38b8495079734ac46b195d2dd7a57
     :git: "git@github.com:zhang232425/ZJRoutableTargets.git"
 
 SPEC CHECKSUMS:

@@ -38,6 +38,12 @@ class ViewController: UITabBarController {
             
         }
         
+        if let vc = ZJFundRoutableTarget.hangge.viewController {
+            
+            vc.tabBarItem = .init(title: "Hangge", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(vc)
+        }
+        
         if let vc = ZJFundRoutableTarget.vendors.viewController {
             
             vc.tabBarItem = .init(title: "Vendors", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)

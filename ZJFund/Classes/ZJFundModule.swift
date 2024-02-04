@@ -27,6 +27,10 @@ public struct ZJFundModule: ZJModule {
             return BaseNavigationVC(rootViewController: RxSwiftVC())
         }
         
+        ZJFundRoutableTarget.register(path: ZJFundRoutePath.hangge) { _ in
+            return BaseNavigationVC(rootViewController: HanggeVC())
+        }
+        
         ZJFundRoutableTarget.register(path: ZJFundRoutePath.vendors) { _ in
             return BaseNavigationVC(rootViewController: VendorsVC())
         }

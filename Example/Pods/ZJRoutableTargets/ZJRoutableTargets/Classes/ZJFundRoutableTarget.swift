@@ -14,6 +14,7 @@ public extension ZJFundRoutePath {
     static let fund = ZJRoutePath(value: "as://fund.fund")
     static let swift = ZJRoutePath(value: "as://fund.swift")
     static let rxSwift = ZJRoutePath(value: "as://fund.rxswift")
+    static let hangge = ZJRoutePath(value: "as://fund.hangge")
     static let vendors = ZJRoutePath(value: "as://fund.vendors")
     
 }
@@ -23,6 +24,7 @@ public enum ZJFundRoutableTarget {
     case fund
     case swift
     case rxSwift
+    case hangge
     case vendors
     
 }
@@ -37,6 +39,8 @@ extension ZJFundRoutableTarget: ZJRoutableTarget {
             return ZJFundRoutePath.swift
         case .rxSwift:
             return ZJFundRoutePath.rxSwift
+        case .hangge:
+            return ZJFundRoutePath.hangge
         case .vendors:
             return ZJFundRoutePath.vendors
         }
@@ -49,6 +53,8 @@ extension ZJFundRoutableTarget: ZJRoutableTarget {
         case .swift:
             return nil
         case .rxSwift:
+            return nil
+        case .hangge:
             return nil
         case .vendors:
             return nil
