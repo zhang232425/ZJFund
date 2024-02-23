@@ -11,6 +11,8 @@ class Douban: Mappable {
 
     var channels: [Channel]?
     
+    init() {}
+    
     required init?(map: Map) {}
     
     func mapping(map: Map) {
@@ -26,6 +28,8 @@ class Channel: Mappable {
     var channelId: String?
     var seqId: Int?
     var abbrEn: String?
+    
+    init() {}
     
     required init?(map: Map) {}
     
