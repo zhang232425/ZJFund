@@ -1362,6 +1362,7 @@
 		46EB2E0000EDB0 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000EEA0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
 		D69F379E2B6F67B0003BAC4E /* HanggeStackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F379D2B6F67B0003BAC4E /* HanggeStackViewVC.swift */; };
+		D6DD5F9A2B8847C500783365 /* JudgmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DD5F992B8847C500783365 /* JudgmentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3865,6 +3866,7 @@
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69F379D2B6F67B0003BAC4E /* HanggeStackViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeStackViewVC.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DD5F992B8847C500783365 /* JudgmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgmentVC.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930AB7584A69BE7DA9C0E05191A0E53 /* ZJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRefresh; path = ZJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6203,6 +6205,7 @@
 			children = (
 				46EB2E00004B10 /* GenericsVC.swift */,
 				46EB2E00004B20 /* SwiftVC.swift */,
+				D6DD5F992B8847C500783365 /* JudgmentVC.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -10663,6 +10666,7 @@
 			files = (
 				46EB2E0000C7B0 /* AAInfographicsCell.swift in Sources */,
 				46EB2E0000C7C0 /* AAInfographicsVC.swift in Sources */,
+				D6DD5F9A2B8847C500783365 /* JudgmentVC.swift in Sources */,
 				46EB2E0000C670 /* ActivityIndicator.swift in Sources */,
 				46EB2E0000C660 /* AddingNumbersVC.swift in Sources */,
 				46EB2E0000C7F0 /* AlamofireVC.swift in Sources */,
