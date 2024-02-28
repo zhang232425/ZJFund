@@ -1361,8 +1361,14 @@
 		46EB2E0000E920 /* ZJExtension-ZJExtension in Resources */ = {isa = PBXBuildFile; fileRef = 50BE319FD3D9034322E01224F31E651F /* ZJExtension-ZJExtension */; };
 		46EB2E0000EDB0 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000EEA0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
+		D66F909B2B8DBA3600D898B4 /* HanggeOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F909A2B8DBA3600D898B4 /* HanggeOtherVC.swift */; };
+		D66F909E2B8DCBAE00D898B4 /* ZJFunctionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F909D2B8DCBAE00D898B4 /* ZJFunctionVC.swift */; };
+		D66F90A12B8DCCDC00D898B4 /* ZJPromiseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F90A02B8DCCDC00D898B4 /* ZJPromiseVC.swift */; };
+		D66F90A32B8DDB5400D898B4 /* ZJAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66F90A22B8DDB5400D898B4 /* ZJAnimationVC.swift */; };
 		D69F379E2B6F67B0003BAC4E /* HanggeStackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F379D2B6F67B0003BAC4E /* HanggeStackViewVC.swift */; };
 		D6DD5F9A2B8847C500783365 /* JudgmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DD5F992B8847C500783365 /* JudgmentVC.swift */; };
+		D6F26DD82B8ED28A00EFDD0A /* ZJDrawingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F26DD72B8ED28A00EFDD0A /* ZJDrawingVC.swift */; };
+		D6F26DDA2B8F1A1A00EFDD0A /* ZJHanggeStudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F26DD92B8F1A1A00EFDD0A /* ZJHanggeStudyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3864,9 +3870,15 @@
 		CF1281E58AA1045D4B7F33FC56691C42 /* SDWebImage-SDWebImage */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "SDWebImage-SDWebImage"; path = SDWebImage.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66F909A2B8DBA3600D898B4 /* HanggeOtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeOtherVC.swift; sourceTree = "<group>"; };
+		D66F909D2B8DCBAE00D898B4 /* ZJFunctionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJFunctionVC.swift; sourceTree = "<group>"; };
+		D66F90A02B8DCCDC00D898B4 /* ZJPromiseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPromiseVC.swift; sourceTree = "<group>"; };
+		D66F90A22B8DDB5400D898B4 /* ZJAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJAnimationVC.swift; sourceTree = "<group>"; };
 		D69F379D2B6F67B0003BAC4E /* HanggeStackViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeStackViewVC.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DD5F992B8847C500783365 /* JudgmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudgmentVC.swift; sourceTree = "<group>"; };
+		D6F26DD72B8ED28A00EFDD0A /* ZJDrawingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJDrawingVC.swift; sourceTree = "<group>"; };
+		D6F26DD92B8F1A1A00EFDD0A /* ZJHanggeStudyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHanggeStudyVC.swift; sourceTree = "<group>"; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E930AB7584A69BE7DA9C0E05191A0E53 /* ZJRefresh */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRefresh; path = ZJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6086,6 +6098,8 @@
 			children = (
 				46EB2E00004860 /* HanggeVC.swift */,
 				D69F379D2B6F67B0003BAC4E /* HanggeStackViewVC.swift */,
+				D66F909A2B8DBA3600D898B4 /* HanggeOtherVC.swift */,
+				D6F26DD92B8F1A1A00EFDD0A /* ZJHanggeStudyVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -6227,6 +6241,7 @@
 				46EB2E00004C70 /* SideMenuVC.swift */,
 				46EB2E00004C80 /* SwiftDateVC.swift */,
 				46EB2E00004CB0 /* VendorsVC.swift */,
+				D66F909F2B8DCCC800D898B4 /* Promise */,
 				46EB2E00004B50 /* AAInfographics */,
 				46EB2E00004BA0 /* Alamofire */,
 				46EB2E00004BC0 /* Charts */,
@@ -6311,6 +6326,7 @@
 			children = (
 				46EB2E00004E10 /* ZJFundCell.swift */,
 				46EB2E00004E20 /* ZJFundVC.swift */,
+				D66F909C2B8DCB8000D898B4 /* Function */,
 				46EB2E00004CF0 /* CAGradientLayer */,
 				46EB2E00004D10 /* CALayer */,
 				46EB2E00004D40 /* CAShapeLayer */,
@@ -7211,6 +7227,24 @@
 			);
 			name = "Pods-ZJFund_Example";
 			path = "Target Support Files/Pods-ZJFund_Example";
+			sourceTree = "<group>";
+		};
+		D66F909C2B8DCB8000D898B4 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				D66F909D2B8DCBAE00D898B4 /* ZJFunctionVC.swift */,
+				D66F90A22B8DDB5400D898B4 /* ZJAnimationVC.swift */,
+				D6F26DD72B8ED28A00EFDD0A /* ZJDrawingVC.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		D66F909F2B8DCCC800D898B4 /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				D66F90A02B8DCCDC00D898B4 /* ZJPromiseVC.swift */,
+			);
+			path = Promise;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -10665,6 +10699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EB2E0000C7B0 /* AAInfographicsCell.swift in Sources */,
+				D66F90A12B8DCCDC00D898B4 /* ZJPromiseVC.swift in Sources */,
 				46EB2E0000C7C0 /* AAInfographicsVC.swift in Sources */,
 				D6DD5F9A2B8847C500783365 /* JudgmentVC.swift in Sources */,
 				46EB2E0000C670 /* ActivityIndicator.swift in Sources */,
@@ -10683,6 +10718,7 @@
 				46EB2E0000C8F0 /* CAShapeLayerVC.swift in Sources */,
 				46EB2E0000C800 /* ChartsVC.swift in Sources */,
 				46EB2E0000C900 /* CoreAnimationVC.swift in Sources */,
+				D66F909B2B8DBA3600D898B4 /* HanggeOtherVC.swift in Sources */,
 				46EB2E0000C910 /* CoreGraphicsVC.swift in Sources */,
 				46EB2E0000C990 /* Date+Extension.swift in Sources */,
 				46EB2E0000C690 /* DefaultImplementations.swift in Sources */,
@@ -10691,6 +10727,7 @@
 				46EB2E0000C640 /* Douban.swift in Sources */,
 				46EB2E0000C920 /* DrawRectContentVC.swift in Sources */,
 				46EB2E0000C930 /* DrawRectVC.swift in Sources */,
+				D66F909E2B8DCBAE00D898B4 /* ZJFunctionVC.swift in Sources */,
 				46EB2E0000C810 /* FMDBVC.swift in Sources */,
 				46EB2E0000C790 /* GenericsVC.swift in Sources */,
 				46EB2E0000C6B0 /* GitHubSignupVC.swift in Sources */,
@@ -10704,6 +10741,7 @@
 				46EB2E0000C5F0 /* HanggeSessionVC.swift in Sources */,
 				46EB2E0000C600 /* HanggeSubjectsVC.swift in Sources */,
 				46EB2E0000C610 /* HanggeTraitsVC.swift in Sources */,
+				D66F90A32B8DDB5400D898B4 /* ZJAnimationVC.swift in Sources */,
 				46EB2E0000C590 /* HanggeVC.swift in Sources */,
 				46EB2E0000C620 /* HanggeViewVC.swift in Sources */,
 				46EB2E0000C630 /* HanggeViewVM.swift in Sources */,
@@ -10718,6 +10756,7 @@
 				46EB2E0000C700 /* RxExampleVC.swift in Sources */,
 				46EB2E0000C780 /* RxSwiftVC.swift in Sources */,
 				46EB2E0000C870 /* SideMenuVC.swift in Sources */,
+				D6F26DDA2B8F1A1A00EFDD0A /* ZJHanggeStudyVC.swift in Sources */,
 				46EB2E0000C710 /* SimpleValidationVC.swift in Sources */,
 				D69F379E2B6F67B0003BAC4E /* HanggeStackViewVC.swift in Sources */,
 				46EB2E0000C6F0 /* String+URL.swift in Sources */,
@@ -10735,6 +10774,7 @@
 				46EB2E0000C770 /* WikipediaSearchResult.swift in Sources */,
 				46EB2E0000C720 /* WikipediaSearchVC.swift in Sources */,
 				46EB2E0000CAA0 /* ZJFund-dummy.m in Sources */,
+				D6F26DD82B8ED28A00EFDD0A /* ZJDrawingVC.swift in Sources */,
 				46EB2E0000C960 /* ZJFundCell.swift in Sources */,
 				46EB2E0000CA10 /* ZJFundModule.swift in Sources */,
 				46EB2E0000C970 /* ZJFundVC.swift in Sources */,

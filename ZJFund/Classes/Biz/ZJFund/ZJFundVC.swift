@@ -20,6 +20,7 @@ class ZJFundVC: BaseVC {
         case hangge
         case algorithm
         case layer  
+        case function
         
         var title: String {
             switch self {
@@ -33,6 +34,8 @@ class ZJFundVC: BaseVC {
                 return "Algorithm"
             case .layer:
                 return "UIView 与CALayer"
+            case .function:
+                return "Function功能"
             }
         }
         
@@ -44,6 +47,8 @@ class ZJFundVC: BaseVC {
                 return RxSwiftVC()
             case .layer:
                 return CALayerVC()
+            case .function:
+                return ZJFunctionVC()
             default:
                 return UIViewController()
             }
@@ -96,7 +101,7 @@ private extension ZJFundVC {
             .subscribe(weak: self, onNext: ZJFundVC.rowClick)
             .disposed(by: disposeBag)
         
-        items.accept([.init(model: (), items: [.swift, .rxSwift, .hangge, .algorithm, .layer])])
+        items.accept([.init(model: (), items: [.swift, .rxSwift, .hangge, .algorithm, .layer, .function])])
         
     }
     

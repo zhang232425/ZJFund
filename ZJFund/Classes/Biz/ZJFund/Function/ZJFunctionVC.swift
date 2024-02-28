@@ -1,8 +1,8 @@
 //
-//  HanggeVC.swift
+//  ZJFunctionVC.swift
 //  ZJFund
 //
-//  Created by Jercan on 2024/2/2.
+//  Created by Jercan on 2024/2/27.
 //
 
 import UIKit
@@ -10,9 +10,9 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class HanggeVC: BaseVC {
+class ZJFunctionVC: BaseVC {
     
-    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["UIStackView", "Other"])])
+    private lazy var datas = BehaviorRelay(value: [SectionModel(model: "", items: ["Animation动画", "Drawing绘画"])])
     
     private var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String, String>>!
     
@@ -23,16 +23,14 @@ class HanggeVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        bindActions()
+        bindDatas()
     }
-
+    
 }
 
-private extension HanggeVC {
+private extension ZJFunctionVC {
     
     func setupViews() {
-        
-        self.navigationItem.title = "Hangge"
         
         tableView.add(to: view).snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -40,19 +38,9 @@ private extension HanggeVC {
         
     }
     
-    func bindActions() {
+    func bindDatas() {
         
-        bindDataSource()
-        
-        tableView.rx.modelSelected(String.self).subscribe(onNext: { [weak self] in
-            self?.rowClick($0)
-        }).disposed(by: disposeBag)
-        
-    }
-    
-    func bindDataSource() {
-        
-        dataSource = .init(configureCell: { dataSource, tableView, indexPath, element in
+        dataSource = RxTableViewSectionedReloadDataSource(configureCell: { dataSource, tableView, indexPath, element in
             let cell: UITableViewCell = tableView.dequeueReuseableCell(forIndexPath: indexPath)
             cell.textLabel?.text = "\(element)"
             return cell
@@ -60,24 +48,26 @@ private extension HanggeVC {
         
         datas.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
         
+        tableView.rx.modelSelected(String.self).subscribeNext(weak: self, ZJFunctionVC.rowClick).disposed(by: disposeBag)
+        
     }
     
 }
 
-private extension HanggeVC {
+private extension ZJFunctionVC {
     
     func rowClick(_ text: String) {
         
         switch text {
             
-        case "UIStackView":
-            let vc = HanggeStackViewVC()
-            self.navigationItem.title = text
+        case "Animation动画":
+            let vc = ZJAnimationVC()
+            vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             
-        case "Other":
-            let vc = HanggeOtherVC()
-            self.navigationItem.title = text
+        case "Drawing绘画":
+            let vc = ZJDrawingVC()
+            vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             
         default:

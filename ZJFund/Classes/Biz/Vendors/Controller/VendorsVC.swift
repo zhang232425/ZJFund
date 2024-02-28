@@ -17,7 +17,7 @@ class VendorsVC: BaseListVC {
      private lazy var items = BehaviorRelay(value: [SectionModel(model: "", items: titles)])
      */
     
-    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit", "ObjectMapper", "Alamofire", "RxAlamofire", "Moya"]
+    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit", "ObjectMapper", "Alamofire", "RxAlamofire", "Moya", "PromiseKit"]
     
     private lazy var datas = BehaviorRelay(value: [SectionModel(model: "", items: items)])
     
@@ -125,6 +125,11 @@ private extension VendorsVC {
             
         case "Moya":
             let vc = MoyaVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "PromiseKit":
+            let vc = ZJPromiseVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             
