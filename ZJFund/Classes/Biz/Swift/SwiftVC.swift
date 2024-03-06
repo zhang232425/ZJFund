@@ -12,7 +12,7 @@ import RxDataSources
 
 class SwiftVC: BaseListVC {
     
-    private lazy var titles: [String] = ["泛型(Generics)", "is类型检查，as类型转换"]
+    private lazy var titles: [String] = ["泛型(Generics)", "is类型检查，as类型转换", "Init初始化"]
     
     /**
      private let items = BehaviorRelay<[SectionModel<Void, Row>]>(value: .init())
@@ -90,6 +90,11 @@ private extension SwiftVC {
         case "is类型检查，as类型转换":
             let vc = JudgmentVC()
             vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "Init初始化":
+            let vc = ZJInitVC()
+            vc.navigationItem.title = "初始化（Init）"
             self.navigationController?.pushViewController(vc, animated: true)
             
         default:
