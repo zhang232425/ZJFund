@@ -572,8 +572,6 @@ extension ChartDataSet: RangeReplaceableCollection {
         notifyDataSetChanged()
     }
     
-    public func replaceSubrange<C>(_ subrange: Swift.Range<Int>, with newElements: C) where C :
-     Collection, ChartDataEntry == C.Element {
-     }
-    
+    public func replaceSubrange<C>(_ subrange: Swift.Range<Int>, with newElements: C) where C : Collection, ChartDataEntry == C.Element {
+    }
 }

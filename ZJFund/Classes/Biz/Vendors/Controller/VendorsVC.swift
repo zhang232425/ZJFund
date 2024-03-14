@@ -129,7 +129,7 @@ private extension VendorsVC {
             self.navigationController?.pushViewController(vc, animated: true)
             
         case "PromiseKit":
-            let vc = ZJPromiseVC()
+            let vc = PromiseVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             
