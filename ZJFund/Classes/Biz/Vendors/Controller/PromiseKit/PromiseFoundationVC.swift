@@ -9,6 +9,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 import PromiseKit
+import Alamofire
+import CoreLocation
 
 class PromiseFoundationVC: BaseVC {
     
@@ -22,6 +24,11 @@ class PromiseFoundationVC: BaseVC {
     
     private lazy var textField = UITextField().then {
         $0.placeholder = "请输入"
+    }
+    
+    private lazy var block = UIView().then {
+        $0.backgroundColor = .red
+        $0.alpha = 0
     }
 
     override func viewDidLoad() {
@@ -47,13 +54,16 @@ private extension PromiseFoundationVC {
             $0.left.right.equalToSuperview().inset(50)
             $0.top.equalTo(testBtn.snp.bottom).offset(30)
         }
+        
+        block.frame = CGRect(x: 0, y: 300, width: 40, height: 40)
+        self.view.addSubview(block)
     
     }
     
     func bindActions() {
         
         testBtn.rx.tap.subscribe(onNext: { [weak self] in
-            self?.alamofire1()
+            self?.gecoder2()
         }).disposed(by: disposeBag)
         
     }
@@ -297,16 +307,211 @@ private extension PromiseFoundationVC {
     
     // 基本用法
     func alamofire1() {
+            
+        let _ = AF.request("https://httpbin.org/get", parameters: ["foo": "bar"])
+            .responseString()
+            .done { string, response in
+                print("--- 请求结果 ---")
+                print(string)
+            }.catch { error in
+                print("--- 请求失败 ---")
+                print(error)
+            }
         
-//        let _ = Alamofire.request("https://httpbin.org/get", parameters: ["foo": "bar"])
-//            .responseString()
-//            .done { string, response in
-//                print(" --- 请求结果 ---")
-//                print(string)
-//            }.catch { error in
-//                print("--- 请求失败 ---")
-//                print(error)
-//            }
+        let _ = AF.request("https://httpbin.org/get", parameters: ["foo": "bar"])
+            .responseData()
+            .done { data, response in
+                if let string = String(data: data, encoding: .utf8) {
+                    print(string)
+                }
+            }.catch { error in
+                print(error)
+            }
+        
+    }
+    
+    // 自动解析json数据
+    func alamofire2() {
+        
+        let _ = AF.request("https://httpbin.org/get", parameters: ["foo": "bar"])
+            .responseDecodable(HttpBin.self)
+            .done { httpBin in
+                print("url：", httpBin.url)
+                print("origin：", httpBin.origin)
+            }.catch { error in
+                print(error)
+            }
+        
+    }
+    
+    // 结合when多个请求
+    func alamofire3() {
+        
+        when(fulfilled: fetchData(parameters: ["foo": "bar"]),
+                        fetchData(parameters: ["name": "hangge"]))
+        .done { str1, str2 in
+            print(str1)
+            print(str2)
+        }.catch { error in
+            print(error)
+        }
+        
+    }
+    
+    // 请求数据
+    func fetchData(parameters: [String: String]) -> Promise<String> {
+        return AF.request("https://httpbin.org/get", parameters: parameters)
+            .responseString()
+            .map { $0.string }
+    }
+    
+    // 结合 ensure() 方法隐藏活动指示器
+    /**
+     ensure 与 finally 比较：
+     相同点在于：它们都是不管前面是成功（fulfilled）还是失败（rejected）都会被执行
+     不同点在于：ensure 是链式的，后面可以继续跟其他的操作，而 finally 不是
+     */
+    func alamofire4() {
+    
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        let _ = AF.request("https://httpbin.org/get", parameters: ["foo": "bar"])
+            .responseString()
+            .ensure {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            }
+            .done { string, response in
+                print(string)
+            }.catch { error in
+                print(error)
+            }
+        
+    }
+    
+}
+
+// 请求结果
+fileprivate struct HttpBin: Codable {
+    var origin: String
+    var url: String
+}
+
+// MARK: - 动画的扩展
+private extension PromiseFoundationVC {
+    
+    func animation1() {
+        
+        UIView.animate(.promise, duration: 1, delay: 0.4, options: [.curveEaseOut]) {
+            self.block.frame.origin.x = self.view.bounds.width - self.block.frame.width
+            self.block.alpha = 1
+        }.done { success in
+            print("动画结束")
+        }
+        
+    }
+    
+}
+
+// MARK: - 位置信息扩展
+private extension PromiseFoundationVC {
+    
+    func location1() {
+        
+        // 获取当前的定位信息
+        let _ = CLLocationManager.requestLocation().done { locations in
+            // 获取最新的坐标
+            let currLocation: CLLocation = locations.last!
+            print("经度：", currLocation.coordinate.longitude)
+            print("纬度：", currLocation.coordinate.latitude)
+            print("海拔：", currLocation.altitude)
+            print("水平精度：", currLocation.horizontalAccuracy)
+            print("垂直精度：", currLocation.verticalAccuracy)
+            print("方向：", currLocation.course)
+            print("速度：", currLocation.speed)
+        }
+            
+        let _ = CLLocationManager.requestLocation(authorizationType: .automatic) { loaction -> Bool in
+            // 只有等到水平精度小于50的时候才返回结果
+            return loaction.horizontalAccuracy < 50 ? true : false
+        }.done { locations in
+            let currLocation: CLLocation = locations.last!
+            print("经度：", currLocation.coordinate.longitude)
+            print("纬度：", currLocation.coordinate.latitude)
+            print("海拔：", currLocation.altitude)
+            print("水平精度：", currLocation.horizontalAccuracy)
+            print("垂直精度：", currLocation.verticalAccuracy)
+            print("方向：", currLocation.course)
+            print("速度：", currLocation.speed)
+        }
+        
+    }
+    
+}
+
+// MARK: - CLGecoder 的扩展
+private extension PromiseFoundationVC {
+    
+    /// 根据经纬度输出地址信息
+    func gecoder1() {
+        
+        // 根据经纬度获取地址信息
+        let currentLocation = CLLocation(latitude: 22.53291, longitude: 113.93029)
+        CLGeocoder().reverseGeocode(location: currentLocation)
+            .done { placemarks in
+                // 强制转成中文
+                let array = NSArray(object: "zh-hans")
+                UserDefaults.standard.set(array, forKey: "AppleLanguages")
+                // 显示所有信息
+                let p = placemarks[0]
+                print(p)
+                if let country = p.country {
+                    print("国家：", country)
+                }
+                if let administrativeArea = p.administrativeArea {
+                    print("省份：", administrativeArea)
+                }
+                if let subAdministrativeArea = p.subAdministrativeArea {
+                    print("行政区（自治区）：", subAdministrativeArea)
+                }
+                if let locality = p.locality {
+                    print("城市：", locality)
+                }
+                if let subLocaity = p.subLocality {
+                    print("区划：", subLocaity)
+                }
+                if let thoroughfare = p.thoroughfare {
+                    print("街道：", thoroughfare)
+                }
+                if let subThoroughfare = p.subThoroughfare {
+                    print("门牌：", subThoroughfare)
+                }
+                if let name = p.name {
+                    print("地名：", name)
+                }
+                if let isoCountryCode = p.isoCountryCode {
+                    print("国家编码：", isoCountryCode)
+                }
+                if let postalCode = p.postalCode {
+                    print("邮编：", postalCode)
+                }
+            }.catch { error in
+                print(error)
+            }
+        
+    }
+    
+    /// 根据地址输出经纬度
+    func gecoder2() {
+        
+        CLGeocoder().geocode("深圳市龙华区深圳北站")
+            .done { placemarks in
+                let p = placemarks[0]
+                print("经度 longitude：", p.location!.coordinate.longitude)
+                print("纬度 latitude：", p.location!.coordinate.latitude)
+            }.catch { error in
+                print(error)
+            }
+        
         
     }
     

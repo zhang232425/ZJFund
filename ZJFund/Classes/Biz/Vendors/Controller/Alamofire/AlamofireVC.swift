@@ -47,7 +47,7 @@ private extension AlamofireVC {
 private extension AlamofireVC {
     
     func request() {
-    
+            
     }
     
 }
