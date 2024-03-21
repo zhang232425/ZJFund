@@ -17,7 +17,7 @@ class VendorsVC: BaseListVC {
      private lazy var items = BehaviorRelay(value: [SectionModel(model: "", items: titles)])
      */
     
-    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit", "ObjectMapper", "Alamofire", "RxAlamofire", "Moya", "PromiseKit"]
+    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit", "ObjectMapper", "Alamofire", "RxAlamofire", "Moya", "PromiseKit", "CryptoSwift"]
     
     private lazy var datas = BehaviorRelay(value: [SectionModel(model: "", items: items)])
     

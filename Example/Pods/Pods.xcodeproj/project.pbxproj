@@ -1435,6 +1435,8 @@
 		46EB2E0000F900 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000F9F0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
 		D64761562BA2F42E00CDDA34 /* Alamofire+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64761552BA2F42D00CDDA34 /* Alamofire+Promise.swift */; };
+		D67F01BF2BABD07300C39785 /* ReactorKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67F01BE2BABD07300C39785 /* ReactorKitVC.swift */; };
+		D67F01C12BABD09100C39785 /* RxFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67F01C02BABD09100C39785 /* RxFeedbackVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4036,6 +4038,8 @@
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64761552BA2F42D00CDDA34 /* Alamofire+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Promise.swift"; sourceTree = "<group>"; };
+		D67F01BE2BABD07300C39785 /* ReactorKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitVC.swift; sourceTree = "<group>"; };
+		D67F01C02BABD09100C39785 /* RxFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFeedbackVC.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6372,6 +6376,7 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E00004EB0 /* RxSwiftVC.swift */,
+				D67F01BB2BABD02A00C39785 /* RxFrame */,
 				46EB2E00004C40 /* HanggeRx */,
 				46EB2E00004D20 /* RxExample */,
 			);
@@ -7547,6 +7552,31 @@
 			);
 			name = "Pods-ZJFund_Example";
 			path = "Target Support Files/Pods-ZJFund_Example";
+			sourceTree = "<group>";
+		};
+		D67F01BB2BABD02A00C39785 /* RxFrame */ = {
+			isa = PBXGroup;
+			children = (
+				D67F01BD2BABD05700C39785 /* ReactorKit */,
+				D67F01BC2BABD04800C39785 /* RxFeedback */,
+			);
+			path = RxFrame;
+			sourceTree = "<group>";
+		};
+		D67F01BC2BABD04800C39785 /* RxFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				D67F01C02BABD09100C39785 /* RxFeedbackVC.swift */,
+			);
+			path = RxFeedback;
+			sourceTree = "<group>";
+		};
+		D67F01BD2BABD05700C39785 /* ReactorKit */ = {
+			isa = PBXGroup;
+			children = (
+				D67F01BE2BABD07300C39785 /* ReactorKitVC.swift */,
+			);
+			path = ReactorKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -11141,6 +11171,7 @@
 				46EB2E0000D470 /* BaseListVC.swift in Sources */,
 				46EB2E0000D480 /* BaseNavigationVC.swift in Sources */,
 				46EB2E0000D490 /* BaseVC.swift in Sources */,
+				D67F01C12BABD09100C39785 /* RxFeedbackVC.swift in Sources */,
 				46EB2E0000D4B0 /* BaseView.swift in Sources */,
 				46EB2E0000D210 /* BasicChartVC.swift in Sources */,
 				46EB2E0000D0A0 /* BindingExtensions.swift in Sources */,
@@ -11159,6 +11190,7 @@
 				46EB2E0000D100 /* Dependencies.swift in Sources */,
 				46EB2E0000D060 /* Douban.swift in Sources */,
 				46EB2E0000D390 /* DrawRectContentVC.swift in Sources */,
+				D67F01BF2BABD07300C39785 /* ReactorKitVC.swift in Sources */,
 				46EB2E0000D3A0 /* DrawRectVC.swift in Sources */,
 				D64761562BA2F42E00CDDA34 /* Alamofire+Promise.swift in Sources */,
 				46EB2E0000D250 /* FMDBVC.swift in Sources */,
