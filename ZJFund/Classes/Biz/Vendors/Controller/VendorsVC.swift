@@ -11,13 +11,8 @@ import RxCocoa
 import RxDataSources
 
 class VendorsVC: BaseListVC {
-    
-    /**
-     private let items = BehaviorRelay<[SectionModel<Void, Row>]>(value: .init())
-     private lazy var items = BehaviorRelay(value: [SectionModel(model: "", items: titles)])
-     */
-    
-    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit", "ObjectMapper", "Alamofire", "RxAlamofire", "Moya", "PromiseKit", "CryptoSwift"]
+        
+    private lazy var items = ["SwiftDate", "SideMenu", "AAInfographics", "Charts", "FMDB", "SwipeCellKit", "ObjectMapper", "Alamofire", "RxAlamofire", "Moya", "PromiseKit", "CryptoSwift", "TTGTagCollectionView"]
     
     private lazy var datas = BehaviorRelay(value: [SectionModel(model: "", items: items)])
     
@@ -130,6 +125,16 @@ private extension VendorsVC {
             
         case "PromiseKit":
             let vc = PromiseVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "CryptoSwift":
+            let vc = CryptoSwiftVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "TTGTagCollectionView":
+            let vc = ZJTagVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

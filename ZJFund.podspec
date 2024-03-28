@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire'
   s.dependency 'RxAlamofire'
   s.dependency 'PromiseKit'
+  s.dependency 'CryptoSwift'
   
   s.dependency 'ZJRequest'
   s.dependency 'ZJLocalizable'

@@ -12,13 +12,7 @@ import RxDataSources
 
 class RxSwiftVC: BaseVC {
     
-    /**
-     private let items = BehaviorRelay<[SectionModel<Void, Row>]>(value: .init())
-     private lazy var items = BehaviorRelay(value: [SectionModel(model: "", items: titles)])
-     private var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String, String>>!
-     */
-
-    private lazy var rows: [String] = ["Hangge", "RxSwift中文文档", "RxSwift社区", "RxExample"]
+    private lazy var rows: [String] = ["Hangge", "RxSwift中文文档", "RxSwift社区", "RxExample", "RxFrame"]
     
     private lazy var datas = BehaviorSubject(value: [SectionModel(model: "", items: rows)])
     
@@ -81,6 +75,11 @@ private extension RxSwiftVC {
             
         case "RxExample":
             let vc = RxExampleVC()
+            vc.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "RxFrame":
+            let vc = RxFrameVC()
             vc.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

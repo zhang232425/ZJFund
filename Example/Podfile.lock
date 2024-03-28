@@ -95,6 +95,7 @@ PODS:
     - Action
     - Alamofire
     - Charts
+    - CryptoSwift
     - FMDB
     - ObjectMapper
     - PromiseKit
@@ -276,7 +277,7 @@ SPEC CHECKSUMS:
   ZJCommonView: e62b96fa97474a99971531e70e5e90c749d90629
   ZJDevice: bfc36b209a264aa5b877a733c6a7cffa856038db
   ZJExtension: 227faf8dfbd3562eaa7cd9120f41d44bf2b59258
-  ZJFund: 3f8aff4aca9b9d604de82ba57d990264c96fa06c
+  ZJFund: e929d75fb4eb41a3092805a791bbd4b7978822a0
   ZJHUD: d5ca2144a62af4331f7f58386f5e4fbc5f5b2d01
   ZJKeychain: 056dd2cf24a6d44cb41677290742fe46cac94d39
   ZJLocalizable: 3c925ba648064d1da4ddc70c29335d4029fc0445
