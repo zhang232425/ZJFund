@@ -12,7 +12,7 @@ import RxDataSources
 
 class HanggeVC: BaseVC {
     
-    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["UIStackView", "Other"])])
+    private let datas = BehaviorRelay(value: [SectionModel(model: "", items: ["UIStackView", "ScratchView", "Other"])])
     
     private var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String, String>>!
     
@@ -72,6 +72,11 @@ private extension HanggeVC {
             
         case "UIStackView":
             let vc = HanggeStackViewVC()
+            self.navigationItem.title = text
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case "ScratchView":
+            let vc = HanggeScratchVC()
             self.navigationItem.title = text
             self.navigationController?.pushViewController(vc, animated: true)
             

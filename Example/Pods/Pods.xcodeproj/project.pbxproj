@@ -1440,6 +1440,7 @@
 		46EB2E0000FA00 /* ZJLocalizable-ZJLocalizable in Resources */ = {isa = PBXBuildFile; fileRef = FD2B9CAB2A6596FC35F6B611E5F42FD6 /* ZJLocalizable-ZJLocalizable */; };
 		46EB2E0000FAF0 /* ZJRegion-ZJRegion in Resources */ = {isa = PBXBuildFile; fileRef = 61706C52A722C7072ECE7CDEB5156231 /* ZJRegion-ZJRegion */; };
 		D67D384B2BB5603B000B22A3 /* ZJTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D384A2BB5603B000B22A3 /* ZJTagVC.swift */; };
+		D67D384D2BB56F38000B22A3 /* HanggeScratchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D384C2BB56F38000B22A3 /* HanggeScratchVC.swift */; };
 		D6BF1F902BB40E3B00945BC7 /* AESEncyptUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BF1F8F2BB40E3B00945BC7 /* AESEncyptUtil.swift */; };
 /* End PBXBuildFile section */
 
@@ -4054,6 +4055,7 @@
 		D28763E37EDD385B2F7D6DE39F447784 /* ZJLocalizable */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJLocalizable; path = ZJLocalizable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51C3D0C53D23B97B032E3BDD4F82C82 /* Differentiator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Differentiator; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67D384A2BB5603B000B22A3 /* ZJTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJTagVC.swift; sourceTree = "<group>"; };
+		D67D384C2BB56F38000B22A3 /* HanggeScratchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanggeScratchVC.swift; sourceTree = "<group>"; };
 		D6BF1F8F2BB40E3B00945BC7 /* AESEncyptUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncyptUtil.swift; sourceTree = "<group>"; };
 		D6CCB9D258E15D810E80DB9950E2B5AC /* AAInfographics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AAInfographics; path = AAInfographics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6382,6 +6384,7 @@
 				46EB2E00004BF0 /* HanggeOtherVC.swift */,
 				46EB2E00004C00 /* HanggeStackViewVC.swift */,
 				46EB2E00004C10 /* HanggeVC.swift */,
+				D67D384C2BB56F38000B22A3 /* HanggeScratchVC.swift */,
 				46EB2E00004C20 /* ZJHanggeStudyVC.swift */,
 			);
 			path = Controller;
@@ -11204,6 +11207,7 @@
 				46EB2E0000D110 /* AddingNumbersVC.swift in Sources */,
 				46EB2E0000D510 /* Alamofire+Promise.swift in Sources */,
 				46EB2E0000D2F0 /* AlamofireVC.swift in Sources */,
+				D67D384D2BB56F38000B22A3 /* HanggeScratchVC.swift in Sources */,
 				46EB2E0000D580 /* BaseCell.swift in Sources */,
 				46EB2E0000D550 /* BaseListVC.swift in Sources */,
 				46EB2E0000D560 /* BaseNavigationVC.swift in Sources */,
